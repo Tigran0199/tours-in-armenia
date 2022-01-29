@@ -206,3 +206,27 @@ select{
 .toursCards:hover {
     background: transparent;
 }
+
+/* About Armenia */
+.aboutConteiner{
+    position: relative;
+    cursor: pointer;
+    margin:0 auto;
+    text-align: center;
+    width:400px;
+    height:360px;
+}
+
+.abuotArmeniah1{
+    font-size: 35px;
+    color: blue;
+    padding: 5px;
+    margin-left:10px;
+}
+.justblue{
+    color: #007dc4;
+}
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
