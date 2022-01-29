@@ -230,3 +230,36 @@ a {
     color: #0060B6;
     text-decoration: none;
 }
+/* Feedback */
+.feedback{
+    /* background-image: url(../img/Tours\ in\ Armenia-logos_transparent.png); */
+    /* width: 600px;
+    height: 600px; */
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.feedback img{
+    width:150px;
+    height:150px;
+}
+.feedbackBoard{
+    width: 295px;
+    height: 350px;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(121, 175, 203, 0.7);
+    /* opacity: 0.9; */
+    /* margin: 30px; */
+    
+}
+.feedbackBoard span{
+    font-weight: bold;
+}
+.feedback img{
+    width: 600px;
+    height: 600px;
+}
