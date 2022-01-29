@@ -17,7 +17,7 @@
                 <label for="subject">Language</label>
                 <select name="subject" id="selectorLanguage">
                     <option value="1">HY</option>
-                    <option value="2" >RU</option>
+                    <option value="2">RU</option>
                     <option value="3" >ENG</option>
                 </optgroup>
             </select>
@@ -35,54 +35,59 @@
                 <img class="logo" src="./img/Test icon.ico" alt="Check code"> 
             </div>
             <div class="navigationBar">
-                <!-- <div class="navButtons">One Day Tours</div>
-                    <div class="navButtons">Multi-Day Tours</div>
-                    <div class="navButtons">Hotels to stay</div>
-                    <div class="navButtons">About us</div> -->
-                    <a href="something" class="button1 bouncy">One Day Tours</a>
-                    <a href="something" class="button1 bouncy" style="animation-delay:0.07s">Multi-Day Tours</a>
-                    <a href="something" class="button1 bouncy" style="animation-delay:0.14s">Hotels to stay</a>
-                    <a href="something" class="button1 bouncy" style="animation-delay:0.21s">About us</a>
+                    <a href="something" class="button1 bouncy">Ամենօրյա տուրեր</a>
+                    <a href="something" class="button1 bouncy" style="animation-delay:0.07s">Արշավներ</a>
+                    <a href="something" class="button1 bouncy" style="animation-delay:0.14s">Հյուրանոցներ</a>
+                    <a href="something" class="button1 bouncy" style="animation-delay:0.21s">Մեր մասին</a>
                 </div>
-                <p class="slogan"><b>Let's <br>discover Armenia <br>together</b></p>
-                <!-- <div class="phonenumber">+34755655955</div> -->
+                <p class="slogan"><b>Բացահայտենք<br>Հայաստանը<br>Միասին</b></p>
             </div>
     </div>
+    <div id="popularTours" ></div>
     <div class="conteiner">
        <div class="popularTours">
-           <h1>🔥Popular Tours🔥</h1>
+        <h1>🔥Թոփ տուրեր🔥</h1>
         </div>
         <div class="flex popularToursConteiner">
-            <div class="toursCards">
+            <div class="toursCards" id="tc1">
                 <!-- https://onewaytour.com/hy/incoming-tours/arshavayin-tur-hayastani-lernerum/ -->
+                <div class="bgDiv firstTour"></div>
                 <img src="https://onewaytour.com/wp-content/uploads/2016/07/5-2-370x280.png" alt="No Internet">
                 <h2>ԱՐՇԱՎԱՅԻՆ ՏՈՒՐ ՀԱՅԱՍՏԱՆԻ ԼԵՌՆԵՐՈՒՄ</h2>
-                <p>7 օր / 7 գիշեր</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, fuga?</p>
-                <p class="price">350USD</p>
-                <button>INFO</button>
+                <p>Հայկական լեռնաշխարհում ճամփորդելու ամենալավ տարբերակը մեր կողմից </p>
+                <p class="price">350 USD</p>
+                <button>Ավելին</button>
             </div>
-            <div class="toursCards" style="background-color: rebeccapurple;">
-                <img src="" alt="">
-                <h2>Tour</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, fuga?</p>
-                <button>INFO</button>   
+            <div class="toursCards" id="tc2">
+                <div class="bgDiv secondTour"></div>
+                <img src="https://onewaytour.com/wp-content/uploads/2018/02/sgasgs-180x136.jpg" alt="Check code">
+                <!-- https://onewaytour.com/hy/regular-daily-tours/caxkadzor-mexradzor/?token=multi-1639598400-0 -->
+                <h2>ԾԱՂԿԱՁՈՐ, ՄԵՂՐԱՁՈՐ</h2>
+                <p>Ուղևորվում ենք Կոտայքի մարզ , հիանալու բնության ձմեռային գեղեցկությամբ յուրօրինակ նմուշներով:</p>
+                <p class="price">7 - 11 USD</p>
+                <button>Ավելին</button>   
             </div>
-            <div class="toursCards" style="background-color: red;"> 
-                <img src="" alt="">
-                <h2>Tour</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, fuga?</p>
-                <button>INFO</button>
+            <div class="toursCards" id="tc3"> 
+                <div class="bgDiv thirthTour"></div>
+                <img src="https://onewaytour.com/wp-content/uploads/2020/01/%D5%BB%D5%A5%D6%80%D5%B4%D5%B8%D6%82%D5%AF-1-1-180x136.jpg" alt="">
+                <!-- https://onewaytour.com/hy/regular-daily-tours/khor-virap-noravanq-jermuk/?token=multi-1624478400-0 -->
+                <h2>ԽՈՐ ՎԻՐԱՊ, ՆՈՐԱՎԱՆՔ, ՋԵՐՄՈՒԿ, ԱՐԵՆԻ, ԵՐԱԶԱՆՔՆԵՐԻ ԿԱՄԱՐ</h2>
+                <p>Միասին բացահայտենք Արարատի մարզի տեսարժան վայրերի գեղեցկությունը</p>
+                <p class="price">12 - 17 USD</p>
+                <button>Ավելին</button>
             </div>
-            <div class="toursCards" style="background-color: plum;">    
-                <img src="" alt="">
-                <h2>Tour</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, fuga?</p>
-                <button>INFO</button>
+            <div class="toursCards" id="tc4">    
+                <div class="bgDiv fourthTour"></div>
+                <!-- https://onewaytour.com/hy/regular-daily-tours/sevan-dilijan-parz-lich/?token=multi-1618516800-0 -->
+                <img src="https://onewaytour.com/wp-content/uploads/2021/12/265083878_927360674590482_8697804791931412321_n-180x136.jpg" alt="Check code">
+                <h2>ՍԵՎԱՆ, ԴԻԼԻՋԱՆ, ՀԱՂԱՐԾԻՆ, ԳՈՇԱՎԱՆՔ
+                </h2>
+                <p>Ամենապահանջված ուղղություններից մեկը թե՛ տեղացի, թե՛ օտարերկրացի զբոսաշրջիկների շրջանում</p>
+                <p class="price">11 - 16 USD</p>
+                <button>Ավելին</button>
             </div>
         </div>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis hic dicta molestias! Fugit aut facere voluptate libero sapiente eligendi, necessitatibus debitis odio praesentium facilis. Blanditiis id neque libero, perferendis suscipit doloremque vitae possimus laudantium illo voluptate repellendus repellat quam temporibus aut. Nemo ipsa inventore totam in iste repellendus ea, temporibus pariatur. Ipsa vitae doloribus nam tenetur perferendis laudantium. Distinctio eos alias quam fugiat cupiditate dignissimos quia maxime corporis, eveniet impedit, illo in magni optio exercitationem illum odit doloremque nisi porro ipsum ipsam dolores hic expedita. Sit quod magnam, quaerat ullam incidunt quibusdam cumque consequuntur veritatis sapiente, pariatur temporibus facilis blanditiis, ipsa id itaque libero quam labore! Laboriosam incidunt aliquid odio assumenda porro rerum minima, pariatur officia facere ducimus labore, dignissimos officiis enim voluptatibus cumque. Explicabo nam labore ea porro distinctio ut qui in voluptatibus, soluta, incidunt fugit voluptatem debitis id quasi aperiam nesciunt ratione nobis possimus libero corrupti! Fuga qui quasi ipsa, sit natus cumque ratione corporis autem repudiandae amet at aperiam optio illum in possimus fugiat iste, officiis nesciunt sapiente atque, quisquam numquam? Est libero et quis maiores inventore totam assumenda obcaecati illum quia voluptas! Vitae officiis iusto at veniam asperiores aliquam eaque, non qui, dolorem nam, assumenda quas sequi rerum officia obcaecati eum quasi ducimus aliquid nisi? Expedita, id harum. Voluptate facere omnis ex sint vitae perferendis minima molestiae accusamus iste amet hic, vel tenetur temporibus voluptatem pariatur, cum, neque explicabo quibusdam nisi veritatis sequi? Nihil voluptatem et harum magnam commodi provident pariatur ab, possimus illo autem non fugiat tenetur quod at, animi quis! Fugit saepe deserunt, architecto voluptatum tempore animi nisi quasi temporibus aliquam quibusdam asperiores corrupti quas obcaecati est soluta doloribus illo sunt, molestiae nostrum tenetur enim libero explicabo non quos? Adipisci ad nesciunt esse recusandae sed animi porro quidem vitae expedita quaerat repellat, labore veniam tempore eum aliquam, sunt accusantium voluptatibus iusto, quod consequatur culpa praesentium non enim? Labore officiis quibusdam aperiam amet unde enim inventore voluptatum, nisi, tempore aspernatur qui sunt repudiandae provident nihil incidunt ipsum nemo recusandae. Incidunt blanditiis natus a unde, vitae quaerat quae deserunt odit quos nulla? Odit perferendis ad fuga rem inventore cupiditate omnis! Incidunt aliquid cumque asperiores facilis aspernatur, velit placeat iure dignissimos reprehenderit quis, voluptates at quos illo consequuntur, cum ullam maxime architecto laboriosam. Eos, debitis nam. Itaque odit voluptatibus iure provident tempora asperiores architecto iusto iste, quas necessitatibus commodi voluptatum minus omnis voluptates culpa possimus maiores recusandae. Dignissimos ullam minus cumque molestias nisi! Vel nisi quaerat, maiores minus, et dolorum illo autem deserunt tempore accusantium, commodi eligendi facilis voluptate maxime quas ipsum aliquam neque cum officiis provident reiciendis. Animi nam rem enim eligendi voluptates dolorem sunt fuga tempora, perspiciatis, eius, accusamus quibusdam debitis delectus praesentium illo veniam. Quis atque sapiente, quisquam quas excepturi minus. Ab recusandae pariatur ipsum provident dolor earum, repellat voluptas sed eaque accusantium sapiente tenetur voluptatibus, odio eum. Veritatis odio asperiores ratione, totam dolor magni? Aut pariatur iure delectus illo dolor molestiae? Excepturi sunt ipsum obcaecati corporis voluptatum accusantium nemo consequuntur, similique eum dolore!</p>
+        
     </div>
 </body>
 </html>
