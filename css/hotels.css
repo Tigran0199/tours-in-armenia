@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+.flex{
+    display: flex;
+}
+/* Navigation Bar */
+.menubar{
+    padding: 15px;
+    /* padding-bottom: 40px; */
+    /* text-align: center; */
+    z-index: 10;  
+    width: 100%;
+    height: 170px;
+    background-image: url(../img/unknowed.png);
+    position: fixed;
+    margin: 0px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo{
+    /* margin: 0 auto; */
+    width: 128px;
+    height: 128px;
+    /* background-color: yellow; */
+    cursor: pointer;
+}
+.navigationBar{
+    margin: 0 auto;
+    width: 60%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;    
+}
+
+.bouncy{
+    animation:bouncy 8s infinite linear;
+    position:relative;
+    text-decoration: none;
+    color: black;
+    border: 1px solid transparent;
+    font-size: 18px;
+    padding: 4px;
+    transition: 0.3s;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.5);
+    transform: translateY(15px);
+}
+.bouncy:hover{
+    border: 1px solid black;
+    font-size: 26px;
+    color: white;
+    padding: 0px 5px;
+    background-color: rgba(121, 175, 203, 0.7);
+}
+@keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+}
+.menuChooser{
+justify-content: space-between;
+/* display: none; */
+}
+.slogan{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-right:  15px;
+}
+.logoAndSlogan{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: start; */
+}
+select{
+    font-size: 18px;
+    font-style: bold;
+    background-color: transparent;
+}
+.conteiner{
+    width: 100%;
+    height: 100%;
+    padding-top: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.popularTours{
+    width: 290px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;    
+    margin-top: 25px; 
+    text-align: center;
+}
+.h_text_info{
+    text-align: center;
+    margin-top: 20px;
+    width: calc(100%-40px); 
+}
+.justblue{
+    color: blue;
+}
+.cardConteiner{
+    width: 80%;
+    margin: 20px auto 50px auto;
+    height:400px;
+    justify-content:space-around;
+            
+}
+
+.hotelCard{
+    width: 240px;
+    height: 300px;
+}
+.hotelCard{
+    position: relative;
+    text-align: center;
+    width: 250px;
+    height: 400px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(121, 175, 203, 0.7);
+    transition: 0.3s;
+    overflow: hidden;   
+    z-index: 2;
+}
+.hotelCard img {
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    z-index: 2;
+    
+}
+.hotelCard:hover{
+    transform: scale(1.1);
+
+}
+.hotelCard:hover h2{
+    color: rgb(50, 50, 219);
+}
+.hotelCard h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.hotelCard p {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.hotelCard button {
+    padding: 5px 15px;
+    border: 1px solid red;
+    position: relative;
+    margin: 4px 4px 0px 4px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+.hotelCard button:hover{
+    padding: 5px 30px;
+    border : 1px solid yellow;
+    background-color: rgba(121, 175, 203, 0.7);
+    font-weight: bold;
+    font-size: 18px;
+}
+.empty{
+    width: 100%;
+    height: 100px;
+}
+/* footer */
+.footer{
+    width: 100%;
+    height: 160px;
+    /* background-color: #0060B6; */
+    background-image: url(../img/footer_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footermenu{
+    text-align: left;
+    margin-left: 10px;
+    color: rgb(180 182 206);
+    cursor: pointer;
+    transition: 0.3s;   
+}
+.footermenu li:hover{
+    color: white;
+}
+.footermenu a{
+    text-decoration: none;
+    color: rgb(180 182 206);
+}
