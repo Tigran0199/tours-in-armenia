@@ -73,7 +73,7 @@ languageSelector.addEventListener("change", function () {
         document.querySelector("#multiDayTour").innerHTML = "Кампании"
         document.querySelector("#hotel").innerHTML = "Отели"
         document.querySelector("#aboutUs").innerHTML = "О нас" 
-        document.querySelector(".slogan").innerHTML = "<b>Откройте<br>для сеюя<br>Армению</b> "
+        document.querySelector(".slogan").innerHTML = "<b>Откройте<br>для себя<br>Армению</b> "
         document.querySelector("#aupopTour").innerHTML="О нас"
         document.querySelector("#au_cardp1").innerHTML="TIA успешно работает на армянском туристическом рынке с 2011 года. Компания организует внутренние, входящие и исходящие туры. Наше агентство специализируется на организации туров и экскурсий в Армении, Нагорном Карабахе, Грузии и Грузии"
         document.querySelector("#au_cardp2").innerHTML="Мы команда энтузиастов-профессионалов, которые верят в успех работы, выполненной с любовью, и нам нравится работа, которую мы делаем"
