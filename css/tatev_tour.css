@@ -10,7 +10,6 @@
 .flex {
   display: flex;
 }
-/* Navigation Bar */
 .menubar {
   padding: 15px;
   /* padding-bottom: 40px; */
@@ -105,28 +104,85 @@ select {
   background-color: transparent;
 }
 
-.main {
+.line {
+  border: 0.3px solid #0000009e;
+  width: 30%;
+  margin: 12px auto;
+}
+.section2_info {
+  text-align: center;
+  margin: 10px;
+  width: 80%;
+  margin: 32px auto;
+}
+.bolder {
+  color: cadetblue;
+  font-size: 20px;
+  font-style: italic;
+}
+.infodiv {
+  text-align: center;
+}
+.head {
+  text-align: center;
+  color: orangered;
+}
+.priceInfo {
+  justify-content: center;
+  display: flex;
+}
+.priceInfo div h2 {
+  margin-left: 20px;
+}
+.mainImagediv {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nkar {
+  width: 33%;
+  height: 236px;
+}
+.nkar img {
   width: 100%;
   height: 100%;
-  border: 2px solid red;
-  margin-top: 180px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
-.section1 {
+.p {
+  width: 80%;
+  margin: 20px auto;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 150px;
+  font-style: italic;
+  font-weight: 600;
 }
 
-.head {
-  color: rgb(218, 55, 27);
+/* footer */
+.footer {
+  width: 100%;
+  height: 160px;
+  /* background-color: #0060B6; */
+  background-image: url(../img/footer_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
+.footermenu {
+  text-align: left;
+  margin-left: 10px;
+  color: rgb(180 182 206);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footermenu li:hover {
+  color: white;
+}
+.footermenu a {
+  text-decoration: none;
+  color: rgb(180 182 206);
+}

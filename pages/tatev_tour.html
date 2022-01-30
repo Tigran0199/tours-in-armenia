@@ -1,66 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel='stylesheet' href='https://codepen.io/P1N2O/pen/xxbjYqx.css'><link rel="stylesheet" href="./style.css">
-    <title>One day tours</title>
-    <link rel="stylesheet" href="../css/tatev_tour.css" />
-  </head>
-  <body>
-      
-    <div class="menubar">
-        <div class="flex menuChooser">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>Tours in Armenia</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/tatev_tour.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <div style="height: 200px;">
+<div class="menubar">
+    <div class="flex menuChooser">
+        <div>
+            <label for="subject">Language</label>
+            <select name="subject" class="selectorLanguage">
+                <option value="armenian">HY</option>
+                <option value="russian">RU</option>
+                <option value="english" >ENG</option>
+            </optgroup>
+             </select>
+    </div>
+        <select name="subject" id="selectorMoney">
+                <option value="USD">USD</option>
+                <option value="AMD">AMD</option>
+                <option value="RUB">RUB</option>
+            </optgroup>
+        </select>
+    </div>
+    <div class="flex">
+        
+        <div class="flex logoAndSlogan">
+           <a href="./index.html"><img class="logo" src="../img/Test icon.ico" alt="Check code"> </a>
+        </div>
+        <div class="navigationBar">
+                <a href="./pages/everyday_tours.html" class="button1 bouncy" id="everyDayTours">Ամենօրյա տուրեր</a>
+                <a href="./pages/multidays_tours.html" class="button1 bouncy" style="animation-delay:0.07s" id="multiDayTours">Արշավներ</a>
+                <a href="./pages/hotels.html" class="button1 bouncy" style="animation-delay:0.14s" id="hotels">Հյուրանոցներ</a>
+                <a href="./pages/about_us.html" class="button1 bouncy" style="animation-delay:0.21s" id="aboutUs">Մեր մասին</a>
+            </div>
+            <p class="slogan"><b>Բացահայտենք<br>Հայաստանը<br>Միասին</b></p>
+        </div>
+</div>
+</div>
+
+<div class="main">
+    <div class="section1">
+        <h2 class="head">ՏԱԹԵՎ, ՀԱՐՍՆԱՁՈՐԻ ԴԻՏԱԿԵՏ, ՆՈՐԱՎԱՆՔ, ԱՐԵՆԻ</h2>
+        <div class="infodiv"> 
+            <span>Սկիզբ	:	06.02.22 08:00</span>
+        </div>
+        <div class="infodiv">
+            <span>Ավարտ	:	06.02.22 22:00</span>
+        </div>
+        <div class="infodiv">
+            <span>Ամեն	:	շաբաթ | կիրակի  </span>
+        </div>
+        <div class="line"></div>
+        <div class="priceInfo">
             <div>
-                <label for="subject">Language</label>
-                <select name="subject" id="selectorLanguage">
-                    <option value="1">HY</option>
-                    <option value="2">RU</option>
-                    <option value="3" >ENG</option>
-                </optgroup>
-            </select>
-        </div>
-            <select name="subject" id="selectorMoney">
-                    <option value="USD">USD</option>
-                    <option value="AMD">AMD</option>
-                    <option value="RUB">RUB</option>
-                </optgroup>
-            </select>
-        </div>
-        <div class="flex">
-            <div class="flex logoAndSlogan">
-                <a href="../index.html"><img class="logo" src="../img/Test icon.ico" alt="Check code"> </a>
+                <h2>Գինը՝	</h2>
             </div>
-            <div class="navigationBar">
-                    <a href="./everyday_tours.html" class="button1 bouncy">Ամենօրյա տուրեր</a>
-                    <a href="something" class="button1 bouncy" style="animation-delay:0.07s">Արշավներ</a>
-                    <a href="./hotels.html" class="button1 bouncy" style="animation-delay:0.14s">Հյուրանոցներ</a>
-                    <a href="./about_us.html" class="button1 bouncy" style="animation-delay:0.21s">Մեր մասին</a>
-                </div>
-                <p class="slogan"><b>Բացահայտենք<br>Հայաստանը<br>Միասին</b></p>
+            <div>
+                <h2>7.500AMD </h2>
+                <h2>9.500AMD </h2> 
             </div>
-    </div>
-
-    <div class="main">
-        <div class="section1">
-            <h1 class="head">ՏԱԹԵՎ, ՀԱՐՍՆԱՁՈՐԻ ԴԻՏԱԿԵՏ, ՆՈՐԱՎԱՆՔ, ԱՐԵՆԻ</h1>
-            <h4 class="mainInfo">Սկիզբ: 08:00 <br>
-                Ավարտ	: 22:00 <br>
-                Ամեն	:	շաբաթ | կիրակի
-            <h2 class="aboutPrice">Գինը՝	7.500AMD
-                9.500AMD </h2>
+            
         </div>
-        <div class="section2"></div>
-        <div class="imageSection"></div>
     </div>
+    <div class="section2">
+        <div class="section2_info">
+            <span class="bolder">ՆԿԱՐԱԳԻՐ</span>
+        </div>
+        <div class="section2_info">
+            <span>Այս անգամ ուղևորվում ենք բացահայտելու ճարտարապետական անկրկնելի կոթող Տաթևի վանական համալիրը: 
 
-    
-  </body>
+                Նախքան Սյունիքի մարզ հասնելը կայցելենք հոյակերտ Նորավանք: Տպավորիչ վանական համալիրն այցելուներին զարմացնում է իր զարդաքանդակների նրբաճաշակությամբ և շրջակայքի հետ ներդաշնակությամբ:</span>
+        </div>
+        <div class="section2_info">
+            <span>Տուրի ընթացքում կանգառ կունենանք նաև Հարսնաձորի դիտակետում, որտեղից բացվում է գեղեցիկ տեսարան դեպի Տաթևի վանական համալիր:  Այնուհետև կայցելենք Տաթևի վանական համալիր, որտեղ կարող եք նստել Տաթևեր ռեկորդակիր ճոպանուղի: </span>
+        </div>
+        <div class="section2_info">
+            <span>Հ.Գ. Ճոպանուղու միակողմանի տոմսն արժե 3.500 դրամ, երկկողմանին՝ 5.000 դրամ:</span>
+            <h4>ՃՈՊԱՆՈՒՂԻ ՆՍՏԵԼՆ ԸՍՏ ՑԱՆԿՈՒԹՅԱՆ Է</h4>
+        </div>
+
+    </div>
+    <div class="section3">
+        <div class="mainImagediv">
+            <div class="nkar">
+                <img src="../img/1511524469250747542.jpg" alt="">
+            </div>
+            <div class="nkar">
+                <img src="../img/1427190142_rqbm8p.jpg" alt="">
+            </div>
+            <div class="nkar">
+                <img src="../img/tatev2.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="p">
+           <p>
+            Մեկնարկի վայր - Երևանի Կոմիտասի անվան Պետական Կոնսերվատորիա
+
+Հաշվի առնելով, որ տեղերը սահմանափակ են, խնդրում ենք նախօրոք կապվել մեզ հետ և գրանցվել:
+           </p>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="flex">
+        <div class="footermenu">
+            <ul>
+                <li ><a href="./pages/about_us.html" id="fau">Մեր մասին</a></li>
+                <li><a href="#popularTours" id="ftt">Թոփ տուրեր</a></li>
+                <li><a href="./pages/about_us.html#contact" id="fcu">Հետադարձ կապ</a></li>
+                <li><a href="./pages/hotels.html" id="fh">Հյուրանոցներ</a></li>
+                <li><a id="fcr">Մեքենաների վարձույթ (շուտով)</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
 </html>
