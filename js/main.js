@@ -1,15 +1,24 @@
 'use strict'
 let langSelector = document.querySelector('.selectorLanguage')
-langSelector.addEventListener('change', function () {
-if(langSelector.value === 'english'){
-    allEnglish()
-}else if(langSelector.value===`russian`){
-    allRussian()
-}else{
-    allArmenian()
-}
-
-})
+let moneySelector = document.querySelector("#selectorMoney")
+    langSelector.addEventListener('change', function () {
+        if(langSelector.value === 'english'){
+            allEnglish()
+        }else if(langSelector.value===`russian`){
+            allRussian()
+        }else{
+            allArmenian()
+    }
+    })
+    moneySelector.addEventListener('change', function () {
+        if(moneySelector.value === 'USD'){
+            allUSD()
+        }else if(moneySelector.value===`AMD`){
+            allARM()
+        }else{
+            allRUB()
+         }
+    })
 function allEnglish(){
     document.getElementById("everyDayTours").innerHTML = "Daily Tours"
     document.getElementById("multiDayTours").innerHTML = "Multi-Day Tours"
@@ -151,6 +160,24 @@ function allRussian(){
     document.querySelector("#fh").innerHTML="Отели"
     document.querySelector("#fcr").innerHTML="Аренда авто(скоро)"
 }
-function getRandomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1))
+
+
+function allARM(){
+    document.querySelector("#price1").innerHTML="60 000 AMD" 
+    document.querySelector("#price2").innerHTML="4000-6000 AMD"
+    document.querySelector("#price3").innerHTML=" 6500 - 8000 AMD"
+    document.querySelector("#price4").innerHTML=" 7500 - 9000 AMD"
 }
+function allRUB(){
+    document.querySelector("#price1").innerHTML="9800 RUB" 
+    document.querySelector("#price2").innerHTML="700-1000 RUB"
+    document.querySelector("#price3").innerHTML=" 700 - 1200 RUB"
+    document.querySelector("#price4").innerHTML=" 1000 - 2000 RUB"
+}
+function allUSD(){
+    document.querySelector("#price1").innerHTML="350USD" 
+    document.querySelector("#price2").innerHTML="7 - 11 USD"
+    document.querySelector("#price3").innerHTML=" 12 - 17 USD"
+    document.querySelector("#price4").innerHTML=" 11 - 16 USD"
+}
+
