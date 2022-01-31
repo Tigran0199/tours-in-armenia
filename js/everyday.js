@@ -1,21 +1,51 @@
 let languageSelector=document.querySelector('#selectorLanguage');
 let moneySelector=document.querySelector('#selectorMoney');
-languageSelector.addEventListener('change',function(){
+let myStorage = window.localStorage;
+
+if(myStorage.getItem("language")==="english"){
+    allEnglish()
+}else if(myStorage.getItem("language")==="russian"){
+    allRussian()
+}else{
+    allArmenian()
+}
+if(myStorage.getItem("money")==="USD"){
+    allUSD()
+}else if(myStorage.getItem("money")==="RUB"){
+    allRUB()
+}else{
+    allAMD()
+}
+
+languageSelector.addEventListener('change',function (){
     if(languageSelector.value==="armenian"){
         allArmenian()
-    } else if(languageSelector.value==="russian"){
+        myStorage.removeItem("language")
+        myStorage.setItem("language","armenian")
+    }else if(languageSelector.value==="russian"){
         allRussian()
-    }else{
+        myStorage.removeItem("language")
+        myStorage.setItem("language","russian")
+    }else {
         allEnglish()
+        myStorage.removeItem("language")
+        myStorage.setItem("language","english")
     }
 })
-moneySelector.addEventListener('change',function(){
-    if(moneySelector.value==="AMD"){
-        allAMD()
-    } else if(moneySelector.value==="RUB"){
-        allRUB()
-    }else{
+
+moneySelector.addEventListener('change',function (){
+    if(moneySelector.value==="USD"){
         allUSD()
+        myStorage.removeItem("money")
+        myStorage.setItem("money","USD")
+    }else if(moneySelector.value==="RUB"){
+        allRUB()
+        myStorage.removeItem("money")
+        myStorage.setItem("money","RUB")
+    }else {
+        allAMD()
+        myStorage.removeItem("money")
+        myStorage.setItem("money","AMD")
     }
 })
 function allArmenian(){
@@ -28,33 +58,33 @@ function allArmenian(){
     document.querySelector("#everyDayTours1").innerHTML="  Մենք կազմակերպում ենք ամենօրյա տուրեր Երևանի և Հայաստանի ամբողջ տարածքում: Անգամ ամենախստապահանջ զբոսաշրջիկը մեր առաջարկած տուրերից կարող է ընտրել իր նախասիրությունները ընդգրկող մեկօրյա տուրեր Հայաստանում և ոչ միայն: Մեր ամենօրյա տուրերը մեկնարկում են Երևան քաղաքից և ներառում այցելություններ Հայաստանի, Արցախի և Վրաստանի բազմաթիվ տեսարժան վայրեր:"
     document.querySelector("#tc1 h2").innerHTML="ՏԱԹԵՎ, ՀԱՐՍՆԱՁՈՐԻ ԴԻՏԱԿԵՏ, ՆՈՐԱՎԱՆՔ, ԱՐԵՆԻ"
     document.querySelector("#tc1p1").innerHTML="Սկիզբ 08:00"
-    document.querySelector("#tc1p2").innerHTML="Գին 7.500 / 9.500 AMD"
+    document.querySelector("#tc1p2").innerHTML="Գին "
     document.querySelector("#tc1p3").innerHTML="Տևողություն 1 օր"
     document.querySelector("#tc1b").innerHTML="Ավելին"
     document.querySelector("#tc2 h2").innerHTML="ՔԱՅԼԱՐՇԱՎ ԴԵՊԻ ՍՄԲԱՏԱԲԵՐԴ, ՀՈՐԲԱՏԵՂ"
     document.querySelector("#tc2p1").innerHTML="Սկիզբ 09:00"
     document.querySelector("#tc2p2").innerHTML="Տևողություն 1 օր"
-    document.querySelector("#tcp3").innerHTML="Գին 6.500 AMD"
+    document.querySelector("#tc2p3").innerHTML="Գին "
     document.querySelector("#tc2b").innerHTML="Ավելին"
     document.querySelector("#tc3 h2").innerHTML="ՈւԽՏԱԳՆԱՑՈՒԹՅՈՒՆ ԴԵՊԻ ՀԱՐԹԱԳՅՈՒՂ՝ ՍՈՒՐԲ ՀՈՎՀԱՆՆԵՍ ՄԱՏՈՒՌ"
     document.querySelector("#tc3p1").innerHTML="Սկիզբ 09:00"
     document.querySelector("#tc3p2").innerHTML="Տևողություն 1 օր"
-    document.querySelector("#tc3p3").innerHTML="Գին 4.500 / 6.500 AMD"
+    document.querySelector("#tc3p3").innerHTML="Գին "
     document.querySelector("#tc3b").innerHTML="Ավելին"
     document.querySelector("#tc4 h2").innerHTML="ԳՈՇԱՎԱՆՔԻՑ ԳՈՇԻ ԼԻՃ, ՀԻՆ ԴԻԼԻՋԱՆ ՀԱՄԱԼԻՐ"
     document.querySelector("#tc4p1").innerHTML="Սկիզբ 09:30"
     document.querySelector("#tc4p2").innerHTML="Տևողություն 1 օր"
-    document.querySelector("#tc4p3").innerHTML="Գին 6.000 / 8.000 AMD"
+    document.querySelector("#tc4p3").innerHTML="Գին"
     document.querySelector("#tc4b").innerHTML="Ավելին"
     document.querySelector("#tc5 h2").innerHTML="ԾԱՂԿԱՁՈՐ, ՄԵՂՐԱՁՈՐ"
     document.querySelector("#tc5p1").innerHTML="Սկիզբ 10:00"
     document.querySelector("#tc5p2").innerHTML="Տևողություն 1 օր"
-    document.querySelector("#tc5p3").innerHTML="Գին 3.500 / 5.500 AMD"
+    document.querySelector("#tc5p3").innerHTML="Գին "
     document.querySelector("#tc5b").innerHTML="Ավելին"
     document.querySelector("#tc6 h2").innerHTML="ՀԱՌԻՃԱՎԱՆՔ, ԳՅՈՒՄՐԻ, ՔԱՂԱՔԱՅԻՆ ՏՈՒՐ"
     document.querySelector("#tc6p1").innerHTML="Սկիզբ 10:00"
     document.querySelector("#tc6p2").innerHTML="Տևողություն 1 օր"
-    document.querySelector("#tc6p3").innerHTML="Գին 5.500 / 7.500 AMD"
+    document.querySelector("#tc6p3").innerHTML="Գին "
     document.querySelector("#tc6b").innerHTML="Ավելին"
     document.querySelector("#fau").innerHTML="Մեր մասին"
     document.querySelector("#ftt").innerHTML="Թոփ տուրեր"
@@ -73,32 +103,32 @@ function allRussian(){
     document.querySelector("#tc1 h2").innerHTML = "    ТАТЕВ, НОРАВАНК, СМОТРОВАЯ ПЛОЩАДКА АРСНАДЗОР, АРЕНИ"
     document.querySelector("#tc1p1").innerHTML = "Начало: 08:00"
     document.querySelector("#tc1p3").innerHTML = "ДЛИТЕЛЬНОСТЬ:  1 день"
-    document.querySelector("#tc1p2").innerHTML = "Цена:	7.500 - 9.500AMD"
+    document.querySelector("#tc1p2").innerHTML = "Цена:	"
     document.querySelector("#tc1b").innerHTML = "Больше"
     document.querySelector("#tc2 h2").innerHTML = "ПАЛОМНИЧЕСКИЙ ТУР К ЧАСОВНЕ СВЯТОГО ОВАНЕСА В ГАЛТАХЧИ"
     document.querySelector("#tc2p1").innerHTML = "Начало: 09:00"
     document.querySelector("#tc2p2").innerHTML = "ДЛИТЕЛЬНОСТЬ:  1 день"
-    document.querySelector("#tcp3").innerHTML = "Цена:	4.500 - 6.500AMD"
+    document.querySelector("#tc2p3").innerHTML = "Цена:	"
     document.querySelector("#tc2b").innerHTML = "Больше"
     document.querySelector("#tc3 h2").innerHTML = "МАРШ НА СМБАТАБЕРД, ГОРБЕДЕ"
     document.querySelector("#tc3p1").innerHTML = "Начало: 09:30"
     document.querySelector("#tc3p2").innerHTML = "ДЛИТЕЛЬНОСТЬ:  1 день"
-    document.querySelector("#tc3p3").innerHTML = "Цена:	4.500 - 6.500AMD"
+    document.querySelector("#tc3p3").innerHTML = "Цена:"
     document.querySelector("#tc3b").innerHTML = "Больше"
     document.querySelector("#tc4 h2").innerHTML = "ОЗЕРО ГОШ ИЗ ГОШАВАНКА, СТАРЫЙ ДИЛИЖАНСКИЙ КОМПЛЕКС"
     document.querySelector("#tc4p1").innerHTML = "Начало: 09:30"
     document.querySelector("#tc4p2").innerHTML = "ДЛИТЕЛЬНОСТЬ:  1 день"
-    document.querySelector("#tc4p3").innerHTML = "Цена:	3.500 / 5.500 AMD"
+    document.querySelector("#tc4p3").innerHTML = "Цена:	"
     document.querySelector("#tc4b").innerHTML = "Больше"
     document.querySelector("#tc5 h2").innerHTML = "    ЦАХКАДЗОР, МЕГРАДЗОР"
     document.querySelector("#tc5p1").innerHTML = "Начало: 10:00"
     document.querySelector("#tc5p2").innerHTML = "ДЛИТЕЛЬНОСТЬ:  1 день"
-    document.querySelector("#tc5p3").innerHTML = "Цена:	3.500 / 5.500 AMD"
+    document.querySelector("#tc5p3").innerHTML = "Цена:	"
     document.querySelector("#tc5b").innerHTML = "Больше"
     document.querySelector("#tc6 h2").innerHTML = "АРИЧАВАНК, ГЮМРИ, ЭКСКУРСИЯ ПО СИТИ"
     document.querySelector("#tc6p1").innerHTML = "Начало: 10:00"
     document.querySelector("#tc6p2").innerHTML = "ДЛИТЕЛЬНОСТЬ:  1 день"
-    document.querySelector("#tc6p3").innerHTML = "Цена:	5.500 / 7.500 AMD"
+    document.querySelector("#tc6p3").innerHTML = "Цена:	"
     document.querySelector("#tc6b").innerHTML = "Больше"
     document.querySelector("#fau").innerHTML="О нас"
     document.querySelector("#ftt").innerHTML="Лучшие туры"
@@ -117,35 +147,60 @@ function allEnglish(){
     document.querySelector("#tc1 h2").innerHTML = "TATEV, HARSNADZOR PERSPECTIVE, NORAVANK, ARENI"
     document.querySelector("#tc1p1").innerHTML = "Start at: 08:00"
     document.querySelector("#tc1p3").innerHTML = "Duration:  1 day"
-    document.querySelector("#tc1p2").innerHTML = "Price:	4.500 - 6.500AMD"
+    document.querySelector("#tc1p2").innerHTML = "Price:"
     document.querySelector("#tc1b").innerHTML = "More"
     document.querySelector("#tc2 h2").innerHTML = "    MARCH TO SMBATABERD, HORBEDE"
     document.querySelector("#tc2p1").innerHTML = "Start at: 09:00"
     document.querySelector("#tc2p2").innerHTML = "Duration:  1 day"
-    document.querySelector("#tcp3").innerHTML = "Price:	6.500 AMD"
+    document.querySelector("#tc2p3").innerHTML = "Price:"
     document.querySelector("#tc2b").innerHTML = "More"
     document.querySelector("#tc3 h2").innerHTML = "    PILGRIMAGE TO PLATO - SAINT HOVHANNES CHURCH"
     document.querySelector("#tc3p1").innerHTML = "Start at: 09:00"
     document.querySelector("#tc3p2").innerHTML = "Duration:  1 day"
-    document.querySelector("#tc3p3").innerHTML = "Price:	4.500 - 6.500AMD"
+    document.querySelector("#tc3p3").innerHTML = "Price:"
     document.querySelector("#tc3b").innerHTML = "More"
     document.querySelector("#tc4 h2").innerHTML = "    GOSH LAKE FROM GOSHAVANK, OLD DILIJAN COMPLEX"
     document.querySelector("#tc4p1").innerHTML = "Start at: 09:30"
     document.querySelector("#tc4p2").innerHTML = "Duration:  1 day"
-    document.querySelector("#tc4p3").innerHTML = "Price:	6.000 / 8.000 AMD"
+    document.querySelector("#tc4p3").innerHTML = "Price:"
     document.querySelector("#tc4b").innerHTML = "More"
     document.querySelector("#tc5 h2").innerHTML = "TSAKHADZOR, MEGRADZOR"
     document.querySelector("#tc5p1").innerHTML = "Start at: 10:00"
     document.querySelector("#tc5p2").innerHTML = "Duration:  1 day"
-    document.querySelector("#tc5p3").innerHTML = "Price:	3.500 / 5.500 AMD"
+    document.querySelector("#tc5p3").innerHTML = "Price:"
     document.querySelector("#tc5b").innerHTML = "More"
     document.querySelector("#tc6 h2").innerHTML = "ARICHAVAN, GYUMRI, EXCURSION TO CITY"
     document.querySelector("#tc6p1").innerHTML = "Start at: 10:00"
     document.querySelector("#tc6p2").innerHTML = "Duration:  1 day"
-    document.querySelector("#tc6p3").innerHTML = "Price:	5.500 / 7.500 AMD"
+    document.querySelector("#tc6p3").innerHTML = "Price:"
     document.querySelector("#fau").innerHTML="About Us"
     document.querySelector("#ftt").innerHTML="Top Tours"
     document.querySelector("#fc").innerHTML="Contacts"
     document.querySelector("#fh").innerHTML="Hotels"
     document.querySelector("#fcr").innerHTML="Car Rentals(soon)"
+}
+
+function allUSD(){
+    document.querySelector("#tc1sp").innerHTML="35-60 USD" 
+    document.querySelector("#tc2sp").innerHTML="25 USD"
+    document.querySelector("#tc3sp").innerHTML="15-45 USD"
+    document.querySelector("#tc4sp").innerHTML="12-25 USD"
+    document.querySelector("#tc5sp").innerHTML="10-22 USD"
+    document.querySelector("#tc6sp").innerHTML="25-35 USD"
+}
+function allRUB(){
+    document.querySelector("#tc1sp").innerHTML="1000-1500 RUB" 
+    document.querySelector("#tc2sp").innerHTML="1300 RUB"
+    document.querySelector("#tc3sp").innerHTML="700-2500 RUB"
+    document.querySelector("#tc4sp").innerHTML="600-1100 RUB"
+    document.querySelector("#tc5sp").innerHTML="650-1500 RUB"
+    document.querySelector("#tc6sp").innerHTML="1000-2500 RUB"
+}
+function allAMD(){
+    document.querySelector("#tc1sp").innerHTML="7.500 / 9.500 AMD" 
+    document.querySelector("#tc2sp").innerHTML="6.500 AMD"
+    document.querySelector("#tc3sp").innerHTML="4.500 / 6.500 AMD"
+    document.querySelector("#tc4sp").innerHTML="6.000 / 8.000 AMD"
+    document.querySelector("#tc5sp").innerHTML="3.500 / 5.500 AMD "
+    document.querySelector("#tc6sp").innerHTML="5.500 / 7.500 AMD"
 }

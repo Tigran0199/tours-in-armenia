@@ -1,24 +1,54 @@
 'use strict'
-let langSelector = document.querySelector('.selectorLanguage')
+let languageSelector = document.querySelector('.selectorLanguage')
 let moneySelector = document.querySelector("#selectorMoney")
-    langSelector.addEventListener('change', function () {
-        if(langSelector.value === 'english'){
-            allEnglish()
-        }else if(langSelector.value===`russian`){
-            allRussian()
-        }else{
-            allArmenian()
+let myStorage = window.localStorage;
+
+if(myStorage.getItem("language")==="english"){
+    allEnglish()
+}else if(myStorage.getItem("language")==="russian"){
+    allRussian()
+}else{
+    allArmenian()
+}
+if(myStorage.getItem("money")==="USD"){
+    allUSD()
+}else if(myStorage.getItem("money")==="RUB"){
+    allRUB()
+}else{
+    allARM()
+}
+
+languageSelector.addEventListener('change',function (){
+    if(languageSelector.value==="armenian"){
+        allArmenian()
+        myStorage.removeItem("language")
+        myStorage.setItem("language","armenian")
+    }else if(languageSelector.value==="russian"){
+        allRussian()
+        myStorage.removeItem("language")
+        myStorage.setItem("language","russian")
+    }else {
+        allEnglish()
+        myStorage.removeItem("language")
+        myStorage.setItem("language","english")
     }
-    })
-    moneySelector.addEventListener('change', function () {
-        if(moneySelector.value === 'USD'){
-            allUSD()
-        }else if(moneySelector.value===`AMD`){
-            allARM()
-        }else{
-            allRUB()
-         }
-    })
+})
+
+moneySelector.addEventListener('change',function (){
+    if(moneySelector.value==="USD"){
+        allUSD()
+        myStorage.removeItem("money")
+        myStorage.setItem("money","USD")
+    }else if(moneySelector.value==="RUB"){
+        allRUB()
+        myStorage.removeItem("money")
+        myStorage.setItem("money","RUB")
+    }else {
+        allARM()
+        myStorage.removeItem("money")
+        myStorage.setItem("money","AMD")
+    }
+})
 function allEnglish(){
     document.getElementById("everyDayTours").innerHTML = "Daily Tours"
     document.getElementById("multiDayTours").innerHTML = "Multi-Day Tours"
