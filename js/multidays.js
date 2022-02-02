@@ -4,17 +4,23 @@ let myStorage = window.localStorage;
 
 if(myStorage.getItem("language")==="english"){
     allEnglish()
+    languageSelector.value="english"
 }else if(myStorage.getItem("language")==="russian"){
     allRussian()
+    languageSelector.value="russian"
 }else{
     allArmenian()
+    languageSelector.value="armenian"
 }
 if(myStorage.getItem("money")==="USD"){
     allUSD()
+    moneySelector.value="USD"
 }else if(myStorage.getItem("money")==="RUB"){
     allRUB()
+    moneySelector.value="RUB"
 }else{
     allAMD()
+    moneySelector.value="AMD"
 }
 
 languageSelector.addEventListener('change',function (){
