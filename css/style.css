@@ -124,24 +124,98 @@ select {
   height: 400px;
   justify-content: space-around;
 }
-.toursCards {
-  position: relative;
-  text-align: center;
-  width: 250px;
-  height: 400px;
-  padding: 5px;
-  cursor: pointer;
-  border: 1px solid rgba(121, 175, 203, 0.7);
-  transition: 0.3s;
-  overflow: hidden;
-  z-index: 2;
+.toursCards{
+    position: relative;
+    text-align: center;
+    width: 250px;
+    height: 400px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(121, 175, 203, 0.7);
+    transition: 0.4s;
+    overflow: hidden;   
+    z-index: 2;
 }
 .toursCards img {
-  width: 100%;
-  height: 150px;
-  border: 1px solid black;
-  margin-bottom: 10px;
-  z-index: 2;
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    z-index: 2;
+    
+}
+.toursCards:hover{
+    transform: scale(1.1);
+
+}
+.toursCards h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.toursCards p {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.toursCards button {
+    padding: 5px 15px;
+    border: 1px solid red;
+    position: relative;
+    margin: 4px 4px 0px 4px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+.toursCards button:hover{
+    padding: 5px 30px;
+    border : 1px solid yellow;
+    background-color: rgba(121, 175, 203, 0.7);
+    font-weight: bold;
+    font-size: 18px;
+}
+.price{
+    font-weight: bold;
+}
+.bgDiv {
+    position: absolute;
+    width: calc(100% - 10px);
+    transition: 0.2s;
+    opacity: 0.1;
+    height: calc(100% - 10px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.firstTour{
+    background-image: url(../img/ԱՐՇԱՎԱՅԻՆ_ՏՈՒՐ1.png);
+
+}
+.secondTour{
+    background-image: url(https://onewaytour.com/wp-content/uploads/2016/11/3.-Cahkadzor-si-resort-Armenia-1-370x280.jpg);
+}
+.thirthTour{
+    background-image: url(https://onewaytour.com/wp-content/uploads/2018/01/Website-tour-singl-watermark-%D5%A9%D5%A5%D6%843-1-390x295.jpg);
+}
+.fourthTour{
+    background-image: url(https://windows10spotlight.com/wp-content/uploads/2021/10/2a5845aae8cb82ac7dc834205022e1d6.jpg);
+}
+#tc1:hover{
+    color: white;
+}
+#tc3:hover{
+    color: white;
+}
+#tc4:hover{
+    color: white;
+}
+.toursCards:hover .bgDiv {
+    /* width: 100%;
+    height: 100%; */
+    transform: scale(1.1);
+    opacity: 1;
+    z-index: -1;
+    
 }
 .toursCards:hover {
   transform: scale(1.1);
