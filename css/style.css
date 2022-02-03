@@ -118,7 +118,7 @@ select{
     padding: 5px;
     cursor: pointer;
     border: 1px solid rgba(121, 175, 203, 0.7);
-    transition: 0.3s;
+    transition: 0.4s;
     overflow: hidden;   
     z-index: 2;
 }
@@ -167,7 +167,7 @@ select{
 .bgDiv {
     position: absolute;
     width: calc(100% - 10px);
-    transition: 0.4s;
+    transition: 0.2s;
     opacity: 0.1;
     height: calc(100% - 10px);
     background-repeat: no-repeat;
