@@ -149,6 +149,7 @@ function allEnglish(){
     document.querySelector("#tc3 h2").innerHTML = "    PILGRIMAGE TO PLATO - SAINT HOVHANNES CHURCH"
     document.querySelector("#tc3p1").innerHTML = "Start at: 09:00"
     document.querySelector("#tc3p2").innerHTML = "Duration:  1 day"
+    document.querySelector("#tc3b").innerHTML = "More"
     document.querySelector("#tc4 h2").innerHTML = "    GOSH LAKE FROM GOSHAVANK, OLD DILIJAN COMPLEX"
     document.querySelector("#tc4p1").innerHTML = "Start at: 09:30"
     document.querySelector("#tc4p2").innerHTML = "Duration:  1 day"
