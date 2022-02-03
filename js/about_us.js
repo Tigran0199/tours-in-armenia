@@ -1,12 +1,30 @@
 let languageSelector = document.querySelector("#selectorLanguage")
+let myStorage = window.localStorage;
+if(myStorage.getItem("language")==="english"){
+    allEnglish()
+    languageSelector.value="english"
+}else if(myStorage.getItem("language")==="russian"){
+    allRussian()
+    languageSelector.value="russian"
+}else{
+    allArmenian()
+    languageSelector.value="armenian"
+}
 languageSelector.addEventListener("change", function () {
     if(languageSelector.value==="armenian"){
-       allArmenian()
+        allArmenian()
+        myStorage.clear()
+        myStorage.setItem("language","armenian")
     }else if(languageSelector.value === "russian"){
         allRussian()
+        myStorage.clear()
+        myStorage.setItem("language","russian")
     }else{
         allEnglish()
+        myStorage.clear()
+        myStorage.setItem("language","english")
     }})
+    console.log(myStorage)
 
     function allArmenian(){
         document.querySelector("#everydayTour").innerHTML = "Ամենօրյա տուրեր"
