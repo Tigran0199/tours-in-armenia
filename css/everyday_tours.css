@@ -207,7 +207,7 @@ select{
     cursor: pointer;
     transition: 0.3s;   
 }
-.footermenu li:hover{
+.footermenu li a:hover{
     color: white;
 }
 .footermenu a{
