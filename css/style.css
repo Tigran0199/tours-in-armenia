@@ -12,8 +12,6 @@
 }
 .menubar {
   padding: 15px;
-  /* padding-bottom: 40px; */
-  /* text-align: center; */
   z-index: 10;
   width: 100%;
   height: 170px;
@@ -25,10 +23,8 @@
   background-repeat: no-repeat;
 }
 .logo {
-  /* margin: 0 auto; */
   width: 128px;
   height: 128px;
-  /* background-color: yellow; */
   cursor: pointer;
 }
 .navigationBar {
@@ -85,7 +81,6 @@
 }
 .menuChooser {
   justify-content: space-between;
-  /* display: none; */
 }
 .slogan {
   text-align: center;
@@ -96,7 +91,6 @@
 .logoAndSlogan {
   display: flex;
   justify-content: space-between;
-  /* align-items: start; */
 }
 select {
   font-size: 18px;
@@ -124,98 +118,90 @@ select {
   height: 400px;
   justify-content: space-around;
 }
-.toursCards{
-    position: relative;
-    text-align: center;
-    width: 250px;
-    height: 400px;
-    padding: 5px;
-    cursor: pointer;
-    border: 1px solid rgba(121, 175, 203, 0.7);
-    transition: 0.4s;
-    overflow: hidden;   
-    z-index: 2;
+.toursCards {
+  position: relative;
+  text-align: center;
+  width: 250px;
+  height: 400px;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid rgba(121, 175, 203, 0.7);
+  transition: 0.4s;
+  overflow: hidden;
+  z-index: 2;
 }
 .toursCards img {
-    width: 100%;
-    height: 150px;
-    border: 1px solid black;
-    margin-bottom: 10px;
-    z-index: 2;
-    
+  width: 100%;
+  height: 150px;
+  border: 1px solid black;
+  margin-bottom: 10px;
 }
-.toursCards:hover{
-    transform: scale(1.1);
-
+.toursCards:hover {
+  transform: scale(1.1);
 }
 .toursCards h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 .toursCards p {
-    font-size: 17px;
-    text-align: center;
-    margin-bottom: 5px;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 5px;
 }
 .toursCards button {
-    padding: 5px 15px;
-    border: 1px solid red;
-    position: relative;
-    margin: 4px 4px 0px 4px;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: 0.3s;
-    
+  padding: 5px 15px;
+  border: 1px solid red;
+  position: relative;
+  margin: 4px 4px 0px 4px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.toursCards button:hover{
-    padding: 5px 30px;
-    border : 1px solid yellow;
-    background-color: rgba(121, 175, 203, 0.7);
-    font-weight: bold;
-    font-size: 18px;
+.toursCards button:hover {
+  padding: 5px 30px;
+  border: 1px solid yellow;
+  background-color: rgba(121, 175, 203, 0.7);
+  font-weight: bold;
+  font-size: 18px;
 }
-.price{
-    font-weight: bold;
+.price {
+  font-weight: bold;
 }
 .bgDiv {
-    position: absolute;
-    width: calc(100% - 10px);
-    transition: 0.2s;
-    opacity: 0.1;
-    height: calc(100% - 10px);
-    background-repeat: no-repeat;
-    background-size: cover;
+  position: absolute;
+  width: calc(100% - 10px);
+  transition: 0.2s;
+  opacity: 0.1;
+  height: calc(100% - 10px);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.firstTour{
-    background-image: url(../img/ԱՐՇԱՎԱՅԻՆ_ՏՈՒՐ1.png);
-
+.firstTour {
+  background-image: url(../img/ԱՐՇԱՎԱՅԻՆ_ՏՈՒՐ1.png);
 }
-.secondTour{
-    background-image: url(https://onewaytour.com/wp-content/uploads/2016/11/3.-Cahkadzor-si-resort-Armenia-1-370x280.jpg);
+.secondTour {
+  background-image: url(https://onewaytour.com/wp-content/uploads/2016/11/3.-Cahkadzor-si-resort-Armenia-1-370x280.jpg);
 }
-.thirthTour{
-    background-image: url(https://onewaytour.com/wp-content/uploads/2018/01/Website-tour-singl-watermark-%D5%A9%D5%A5%D6%843-1-390x295.jpg);
+.thirthTour {
+  background-image: url(https://onewaytour.com/wp-content/uploads/2018/01/Website-tour-singl-watermark-%D5%A9%D5%A5%D6%843-1-390x295.jpg);
 }
-.fourthTour{
-    background-image: url(https://windows10spotlight.com/wp-content/uploads/2021/10/2a5845aae8cb82ac7dc834205022e1d6.jpg);
+.fourthTour {
+  background-image: url(https://windows10spotlight.com/wp-content/uploads/2021/10/2a5845aae8cb82ac7dc834205022e1d6.jpg);
 }
-#tc1:hover{
-    color: white;
+#tc1:hover {
+  color: white;
 }
-#tc3:hover{
-    color: white;
+#tc3:hover {
+  color: white;
 }
-#tc4:hover{
-    color: white;
+#tc4:hover {
+  color: white;
 }
 .toursCards:hover .bgDiv {
-    /* width: 100%;
-    height: 100%; */
-    transform: scale(1.1);
-    opacity: 1;
-    z-index: -1;
-    
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: -1;
 }
 .toursCards:hover {
   transform: scale(1.1);
@@ -280,8 +266,6 @@ select {
   color: white;
 }
 .toursCards:hover .bgDiv {
-  /* width: 100%;
-    height: 100%; */
   transform: scale(1.1);
   opacity: 1;
   z-index: -1;
@@ -295,6 +279,7 @@ select {
   position: relative;
   cursor: pointer;
   margin: 0 auto;
+  margin-top: 50px;
   text-align: center;
   width: 400px;
   height: 360px;
@@ -315,9 +300,6 @@ a {
 }
 /* Feedback */
 .feedback {
-  /* background-image: url(../img/Tours\ in\ Armenia-logos_transparent.png); */
-  /* width: 600px;
-    height: 600px; */
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -334,9 +316,9 @@ a {
   height: 350px;
   text-align: center;
   font-size: 18px;
+  padding: 20px;
+  border-radius: 10px;
   background-color: rgba(121, 175, 203, 0.7);
-  /* opacity: 0.9; */
-  /* margin: 30px; */
 }
 .feedbackBoard span {
   font-weight: bold;
@@ -345,12 +327,81 @@ a {
   width: 600px;
   height: 600px;
 }
+.running {
+  width: calc(100% - 200px);
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.running img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  animation: runngingCat 10s infinite linear;
+}
+@keyframes runngingCat {
+  0% {
+    right: 5%;
+  }
+  10%{
+    bottom: -10px;
+  }
+  12% {
+    right: 25%;
+    bottom: 20px;
+  }
+  15%{
+    bottom:5px
+  }
+  25% {
+    bottom: 0px;
+    right: 50%;
+  }
+  37% {
+    right: 75%;
+  }
+  49% {
+    right: 100%;
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  61%{
+    bottom: 0px;
+  }
+  62% {
+    right:75% ;
+    bottom: -10px;
+  }
+  65%{
+    bottom: 25px;
+  }
+  70%{
+    bottom: 10px;
+  }
+  74% {
+    bottom: 0px;
+    right: 50%;
+  }
+  86% {
+    right: 25%;
+  }
+  98% {
+    right: 2%;
+    transform: rotateY(170deg);
+  }
+  100% {
+    right: 0%;
+    transform: rotateY(180deg);
+  }
+}
 
 /* footer */
 .footer {
   width: 100%;
   height: 160px;
-  /* background-color: #0060B6; */
   background-image: url(../img/footer_back.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -376,4 +427,51 @@ a {
 }
 .footermenu li a:hover {
   color: white;
+}
+
+/* Animation for header */
+@keyframes gettingHidden {
+  0% {
+    transform: scale(0.9);
+  }
+  25% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes goingTop {
+ 0%{
+   transform: translateX(-5px);
+   transform: translateY(-5px);
+ }
+ 25%{
+  transform: translateX(-25px);
+  transform: translateY(-25px);
+ }
+ 50%{
+  transform: translateX(-35px);
+  transform: translateY(-35px);
+ }
+ 75%{
+  transform: translateX(-45px);
+  transform: translateY(-45px);
+ }
+ 100%{
+  transform: translateX(-55px);
+  transform: translateY(-55px);
+ }
+}
+.goTop {
+  animation: goingTop 1.5s;
+}
+.goingHidden {
+  animation: gettingHidden 1s linear;
 }

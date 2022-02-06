@@ -144,6 +144,7 @@ select {
 .nkar {
   width: 33%;
   height: 236px;
+  transition: 0.4s;
 }
 .nkar img {
   width: 100%;
