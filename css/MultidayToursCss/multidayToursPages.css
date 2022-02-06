@@ -10,7 +10,6 @@
 .flex {
   display: flex;
 }
-/* Navigation Bar */
 .menubar {
   padding: 15px;
   /* padding-bottom: 40px; */
@@ -18,7 +17,7 @@
   z-index: 10;
   width: 100%;
   height: 170px;
-  background-image: url(../img/unknowed.png);
+  background-image: url(../../img/unknowed.png);
   position: fixed;
   margin: 0px;
   background-size: cover;
@@ -104,99 +103,84 @@ select {
   font-style: bold;
   background-color: transparent;
 }
-.conteiner {
-  width: 100%;
-  height: 100%;
-  padding-top: 180px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.popularTours {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-  text-align: center;
-}
-.justBlue {
-  color: rgb(44, 44, 228);
-}
-.title {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 20px;
-}
 
-.everydayTourConteiner {
-  width: 80%;
-  margin: 20px auto 50px auto;
-  /* height:400px; */
+.main {
+  width: 100%;
+}
+.head {
+  text-align: center;
+  color: orangered;
+}
+.infodiv {
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  font-weight: 800;
+  color: rgb(42, 66, 133);
+}
+.line {
+  border: 0.3px solid #0000009e;
+  width: 30%;
+  margin: 12px auto;
+}
+.priceInfo {
+  text-align: center;
+}
+.overview {
+  width: 100%;
+}
+.h3_subtitle {
+  text-align: center;
+  color: rgb(49, 117, 219);
+  font-style: italic;
+  padding: 30px;
+}
+.overview_info {
+  text-align: center;
+}
+.whole_info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+.about_tour {
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-right: 1px dotted rgb(7, 175, 175);
+  padding: 0 30px;
 }
-a {
-  text-decoration: none;
-  color: black;
+.about_tour h5 {
+  padding: 5px;
+  color: #007dc4;
 }
-.jcsb {
-  justify-content: space-between;
+.about_tour p {
+  padding: 5px;
+  color: #f37b1f;
 }
 
-.tourCard {
-  position: relative;
-  text-align: center;
-  width: 250px;
-  height: 400px;
-  padding: 5px;
-  cursor: pointer;
-  border: 1px solid rgba(121, 175, 203, 0.7);
-  transition: 0.3s;
-  overflow: hidden;
-  z-index: 2;
-  margin-top: 25px;
+.main_line {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
 }
-.tourCard img {
-  width: 100%;
-  height: 150px;
-  border: 1px solid black;
-  margin-bottom: 10px;
-  z-index: 2;
+.between_line {
+  width: 48%;
+  border: 1px solid #007dc4;
 }
-.tourCard:hover {
-  transform: scale(1.1);
-}
-.tourCard:hover h2 {
-  color: rgb(50, 50, 219);
-}
-.tourCard h2 {
+.digit {
+  width: 4%;
+  height: 41px;
   font-size: 18px;
-  margin-bottom: 10px;
-}
-.tourCard p {
-  font-size: 17px;
-  text-align: center;
-  margin-bottom: 5px;
-}
-.tourCard button {
-  padding: 5px 15px;
-  border: 1px solid red;
-  position: relative;
-  margin: 4px 4px 0px 4px;
-  border-radius: 5px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.tourCard button:hover {
-  padding: 5px 30px;
-  border: 1px solid yellow;
-  background-color: rgba(121, 175, 203, 0.7);
-  font-weight: bold;
-  font-size: 18px;
-}
-.empty {
-  width: 100%;
-  height: 100px;
+  border: 1px solid #007dc4;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: #007dc4;
 }
 
 /* footer */
@@ -204,7 +188,7 @@ a {
   width: 100%;
   height: 160px;
   /* background-color: #0060B6; */
-  background-image: url(../img/footer_back.png);
+  background-image: url(../../img/footer_back.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -220,7 +204,7 @@ a {
   cursor: pointer;
   transition: 0.3s;
 }
-.footermenu li a:hover {
+.footermenu li:hover {
   color: white;
 }
 .footermenu a {

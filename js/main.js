@@ -2,6 +2,8 @@
 let languageSelector = document.querySelector('.selectorLanguage')
 let moneySelector = document.querySelector("#selectorMoney")
 let myStorage = window.localStorage;
+const SCROLLHEIGHT = document.documentElement.scrollHeight
+
 
 if(myStorage.getItem("language")==="english"){
     allEnglish()
@@ -23,6 +25,22 @@ if(myStorage.getItem("money")==="USD"){
     allARM()
     moneySelector.value="ARM"
 }
+document.querySelector("body").onscroll = function() {
+    if(window.pageYOffset>=250){
+        document.querySelector(".menuChooser").style.display="none"
+        document.querySelector(".logo").style.display="none"
+        document.querySelector(".slogan").style.display="none"
+        document.querySelector(".menubar").style.height="80px"
+        document.querySelector(".navigationBar").style.alignItems = "flex-start"
+        
+    }else{
+        document.querySelector(".menuChooser").style.display="flex"
+        document.querySelector(".menubar").style.height="170px"
+        document.querySelector(".logo").style.display=""
+        document.querySelector(".slogan").style.display=""
+        document.querySelector(".navigationBar").style.alignItems = "flex-end"
+    }
+  }
 
 languageSelector.addEventListener('change',function (){
     if(languageSelector.value==="armenian"){
