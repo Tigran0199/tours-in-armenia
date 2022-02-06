@@ -171,6 +171,7 @@ select {
 .hotel_image {
   width: 33%;
   height: 236px;
+  transition: 0.4s;
 }
 .hotel_image img {
   width: 100%;
