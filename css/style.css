@@ -316,7 +316,7 @@ a {
   height: 350px;
   text-align: center;
   font-size: 18px;
-  padding: 20px;
+  padding: 0px 0px 25px 0px;
   border-radius: 10px;
   background-color: rgba(121, 175, 203, 0.7);
 }
@@ -339,6 +339,7 @@ a {
   width: 100px;
   height: 100px;
   animation: runngingCat 10s infinite linear;
+  cursor: pointer;
 }
 @keyframes runngingCat {
   0% {
