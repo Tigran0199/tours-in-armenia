@@ -3,6 +3,11 @@ let languageSelector = document.querySelector(".selectorLanguage");
 let moneySelector = document.querySelector("#selectorMoney");
 let myStorage = window.localStorage;
 const SCROLLHEIGHT = document.documentElement.scrollHeight;
+const CAT = document.querySelector(".isRunning");
+const catAudio = new Audio("../hidden/playMe.mp3");
+CAT.addEventListener("mouseover",function(){
+  catAudio.play();
+})
 
 if (myStorage.getItem("language") === "english") {
   allEnglish();
