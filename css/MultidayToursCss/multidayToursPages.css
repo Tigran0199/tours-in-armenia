@@ -248,6 +248,7 @@ select {
   padding: 30px;
 }
 .overview_info {
+  padding-bottom: 18px;
   text-align: center;
 }
 .whole_info {
