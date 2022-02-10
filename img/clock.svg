@@ -1,0 +1,16 @@
+ <svg width="38.8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38.8 38.8" enable-background="new 0 0 38.8 38.8" xml:space="preserve">
+                    <g id="Layer_2">
+                    </g>
+                    <g id="Layer_1">
+                    <g>
+                    <g>
+                    <circle fill="none" stroke="#007DC4" stroke-miterlimit="10" cx="19.4" cy="19.4" r="18.9"></circle>
+                    <line fill="none" stroke="#007DC4" stroke-miterlimit="10" x1="19.4" y1="38.3" x2="19.4" y2="33.2"></line>
+                    <line fill="none" stroke="#007DC4" stroke-miterlimit="10" x1="19.4" y1="5.6" x2="19.4" y2="0.5"></line>
+                    <line fill="none" stroke="#007DC4" stroke-miterlimit="10" x1="38.3" y1="19.4" x2="33.2" y2="19.4"></line>
+                    <line fill="none" stroke="#007DC4" stroke-miterlimit="10" x1="5.6" y1="19.4" x2="0.5" y2="19.4"></line>
+                    </g>
+                    <polyline fill="none" stroke="#007DC4" stroke-miterlimit="10" points="15,11.8 18.3,20.3 28,23 		"></polyline>
+                    </g>
+                    </g>
+</svg>
