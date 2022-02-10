@@ -120,9 +120,6 @@ select {
   font-style: italic;
 }
 
-.infodiv {
-  text-align: center;
-}
 .head {
   text-align: center;
   color: orangered;
@@ -190,3 +187,53 @@ select {
   text-decoration: none;
   color: rgb(180 182 206);
 }
+
+.main {
+  width: 100%;
+}
+.infodiv {
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  font-weight: 800;
+  color: rgb(42, 66, 133);
+}
+.priceInfo {
+  text-align: center;
+}
+.overview {
+  width: 100%;
+}
+.h3_subtitle {
+  text-align: center;
+  color: rgb(49, 117, 219);
+  font-style: italic;
+  padding: 30px;
+}
+.overview_info {
+  text-align: center;
+}
+.whole_info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.about_tour {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-right: 1px dotted rgb(7, 175, 175);
+  padding: 0 30px;
+}
+.about_tour h5 {
+  padding: 5px;
+  color: #007dc4;
+}
+.about_tour p {
+  padding: 5px;
+  color: #f37b1f;
+}
+

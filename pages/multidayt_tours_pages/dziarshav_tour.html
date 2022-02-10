@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>Tours in Armenia</title>
+    <link rel="stylesheet" href="../../css/MultidayToursCss/multidayToursPages.css">
+    <script src="../../js/header-animation.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js" defer></script>
+    <script src="../../js/svg.js" defer></script>
+</head>
+<body>
+    <div style="height: 200px;">
+<div class="menubar">
+    <div class="flex menuChooser">
+        <div>
+            <label for="subject">Language</label>
+            <select name="subject" class="selectorLanguage">
+                <option value="armenian">HY</option>
+                <option value="russian">RU</option>
+                <option value="english" >ENG</option>
+            </optgroup>
+             </select>
+    </div>
+        <select name="subject" id="selectorMoney">
+                <option value="USD">USD</option>
+                <option value="AMD">AMD</option>
+                <option value="RUB">RUB</option>
+            </optgroup>
+        </select>
+    </div>
+    <div class="flex">
+        
+        <div class="flex logoAndSlogan">
+           <a href="../../index.html"><img class="logo" src="../../img/Test icon.ico" alt="Check code"> </a>
+        </div>
+        <div class="navigationBar">
+                <a href="../everyday_tours.html" class="button1 bouncy" id="everyDayTours">Ամենօրյա տուրեր</a>
+                <a href="../multidays_tours.html" class="button1 bouncy" style="animation-delay:0.07s" id="multiDayTours">Արշավներ</a>
+                <a href="../hotels.html" class="button1 bouncy" style="animation-delay:0.14s" id="hotels">Հյուրանոցներ</a>
+                <a href="../about_us.html" class="button1 bouncy" style="animation-delay:0.21s" id="aboutUs">Մեր մասին</a>
+            </div>
+            <p class="slogan"><b>Բացահայտենք<br>Հայաստանը<br>Միասին</b></p>
+        </div>
+</div>
+</div>
+
+
+<div class="main">
+    <section class="title_section">
+        <h2 class="head">ՁԻԱՐՇԱՎ ՀԱՅԱՍՏԱՆՈՒՄ</h2>
+        <div class="infodiv"> 
+            <span>9 օր / 8 գիշեր</span>
+        </div>
+        <div class="line"></div>
+        <div class="priceInfo">
+                <h3>Գինը՝ սկսած 831 USD</h3>
+        </div>
+    </section>
+    <div class="compas">
+        <a href="#round1" class="unique"> 
+        <div class="compas_line">
+            <div class="anim_div"></div>
+            <div class="anim_div2"></div>    
+       
+            <div class="round">
+                <div class="text_div" id="unique_text"><p>Օր 1: Ժամանում - Շրջայց քաղաքում-Էջմիածին</p></div>
+              <div class="hover_div">
+                  
+              </div>
+            </div>
+        </a>
+        <a href="#round2">
+            <div class="round">
+              <div class="text_div"><p>Օր 2: Երևան-Խոր Վիրապ-Նորավանք-Սիսիան</p></div>
+              <div class="hover_div"></div>
+            </div>
+        </a>
+        <a href="#round3">
+            <div class="round">
+                <div class="text_div"><p>Օր 3: Սիսիան-Քարահունջ-Շաքիի ջրվեժ-Սևանալիճ-Դիլիջան</p></div>
+              <div class="hover_div">
+                  
+              </div>
+            </div>
+        </a>
+        <a href="#round4">
+            <div class="round">
+                <div class="text_div"><p>Օր 4: Դիլիջան-Գոշավանք-Ենոքավան</p></div>
+              <div class="hover_div">
+                  
+              </div>
+            </div>
+        </a>
+        <a href="#round5">
+            <div class="round">
+                <div class="text_div"><p>Օր 5: Ենոքավան-Բերդատեղ-Ենոքավան</p></div>
+              <div class="hover_div">
+                  
+              </div>
+            </div>
+        </a>
+        <a href="#round6">
+            <div class="round">
+                <div class="text_div"><p>Օր 6: Ենոքավան-Սրվեղի վանք-Ենոքավան</p></div>
+              <div class="hover_div">
+                  
+              </div>
+            </div>
+        </a>
+        <a href="#round7">
+            <div class="round">
+                <div class="text_div"><p>Օր 7: Ենոքավան-Ախթալա-Հաղպատ-Երևան</p></div>
+              <div class="hover_div">
+                  
+              </div>
+            </div>
+        </a>
+        <a href="#round8">
+            <div class="round">
+                <div class="text_div"><p>Օր 8: Երևան-Գառնի-Գեղարդ-Երևան</p></div>
+              <div class="hover_div">
+                  
+              </div>
+            </div>
+        </a>
+        <a href="#round9">
+            <div class="round">
+                <div class="text_div"><p>Օր 9: Մեկնում</p></div>
+              <div class="hover_div">
+                  
+              </div>
+            </div>
+        </a>
+            </div>
+        
+
+        </div>
+    </div>
+    <section class="overview">
+        <h3 class="h3_subtitle" id="round1">ՆԿԱՐԱԳԻՐ</h3>
+        <div class="overview_info">
+            <p>Ներգնա տուրեր Հայաստանում՝ <a href="../../index.html">Tours in Armenia</a> տուրիստական ընկերության հետ: TIA-ի ձիավարության տուրերին մասնակցելու համար պարտադիր չէ լինել հմուտ ձիավար: Մեր տուրերը նախատեսված են ինչպես ձիավարության հմտություններ ունեցողների, այնպես էլ սկսնակների համար:
+
+                Ձիարշավային տուրիզմը  հանգստի հրաշալի միջոց է: Այն հնարավորություն է ընձեռում վայելել բնության ներդաշնակությունը, զգալ քեզ բնության մի մասնիկ և միաձուլվել բնությանը: TIA-ի ձավարության տուրերին մասնակցելու համար պարտադիր չէ լինել հմուտ ձիավար: Մեր տուրերը նախատեսված են ինչպես ձիավարության հմտություններ ունեցողների, այնպես էլ սկսնակների համար: 
+            </p>
+        </div>
+        <div class="whole_info">
+            <div class="about_tour">
+                 <object id="type" onmouseenter="playTypeAnim()" type="image/svg+xml" data="../../img/type.svg"></object>
+                <h5>ՏՈՒՐԻ ՏԵՍԱԿ</h5>
+                <p>արկածային</p>
+            </div>
+            <div class="about_tour">
+                <object id="clock" onmouseenter="playClockAnim()" type="image/svg+xml" data="../../img/clock.svg"></object>
+                <h5>ՏԵՎՈՂՈՒԹՅՈՒՆ</h5>
+                <p>9 օր / 8 գիշեր</p>
+            </div>
+            <div class="about_tour">
+                <object id="people_count" onmouseenter="playPeopleAnim()" type="image/svg+xml" data="../../img/people_count.svg"></object>
+                <h5>ՄԱՐԴԿԱՆՑ ՔԱՆԱԿԸ</h5>
+                <p>4+</p>
+            </div>
+            <div class="about_tour">
+                <object id="hotel"  onmouseenter="playHotelAnim()" type="image/svg+xml" data="../../img/hotel.svg"></object>
+                <h5>ԿԱՑԱՐԱՆ</h5>
+                <p>հյուրանոց</p>
+            </div>
+            <div class="about_tour">
+                <object id="season" onmouseenter="playSeasonAnim()" type="image/svg+xml" data="../../img/season.svg"></object>
+                <h5>ԼԱՎ. ՍԵԶՈՆ</h5>
+                <p>մայիս - հոկտեմբեր</p>
+            </div>
+            <div class="about_tour">
+                <object id="start_end" onmouseenter="playStartAnim()" type="image/svg+xml" data="../../img/start_end.svg"></object>
+                <h5>ՍԿԻԶԲ / ԱՎԱՐՏ</h5>
+                <p>Երևան / Երևան</p>
+            </div>
+        </div>
+    </section>
+    <div class="main_line">
+        <div class="between_line"></div>
+        <div class="digit">1</div>
+        <div class="between_line"></div>
+    </div>
+    <section class="section3">
+        <p class="first_day_title">Ժամանում - Շրջայց քաղաքում - Էջմիածին</p>
+        <p>Դիմավորում օդանավակայանում: Տեղափոխում հյուրանոց: Նախաճաշ հյուրանոցում: Շրջայց Երևան քաղաքում, որը կընդգրկի գլխավոր փողոցներն ու շինությունները, 
+            ինչը հնարավորություն կտա ծանոթանալ մայրաքաղաքին: Կուղևորվենք Զվարթնոցի տաճար՝ կառուցված 7-րդ դարում,  որից մեզ են հասել ավերակները: Զվարթնոցի տաճարը, 
+            Էջմիածնի Մայր Տաճարի և Սբ. Գայանե ու Սբ. Հռիփսիմե եկեղեցիների հետ միասին ընդգրկված է ՅՈՒՆԵՍԿՕ-ի համաշխարհային Ժառանգությունների Ցանկում: Մայր Տաճարի 
+            այցելությունով կեզրափակենք այսօրվա տուրը: Վերադարձ Երևան:</p>
+        <p class="first_day_title" id="round2">Գիշերակաց: Երևան</p> 
+        <div class="images">
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/03/img_2405-hdr-753945-370x280.jpg" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/03/Armenia-23-1-370x280.jpg" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/03/yerevan-from-cascades-ararat-1-1-3-1024x683-2-1-390x295.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="main_line">
+        <div class="between_line"></div>
+        <div class="digit">2</div>
+        <div class="between_line"></div>
+    </div>
+    <section class="section4">
+        <p class="first_day_title">Երևան - Խոր Վիրապ - Նորավանք - Սիսիան</p>
+        <p>Նախաճաշ հյուրանոցում։ Մեկնում դեպի Խոր Վիրապի վանք։ Վանական համալիրից բացվում է անկրկնելի տեսարան
+             դեպի Արարատ լեռը։ Հաջորդ կանգառը կլինի «Թռչունների» քարանձավի մոտ, որտեղ վերջերս հայտնաբերել են 
+             աշխարհի հնագույն կոշիկն ու 6000 տարեկան գինեգործարանը: Կայցելենք նաև Նորավանքի վանական համալիրը,
+            որը հայ ճարտարապետության գլուխգործոցներից մեկն  է։ 
+            Այնուհետև կուղևորվենք դեպի Սիսիան: Մոտ 1 ժամ ձիավարելուց հետո ընթրիք և գիշերակաց Սիսիանում:
+        </p>
+        <p class="first_day_title" id="round3">Գիշերակաց: Սիսիան</p> 
+        <div class="images">
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2017/02/khor-virap3-370x280.png" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/11/2.-noravanq-370x280.png" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/11/7.-15-06-03-noravank-madonna-370x280.png" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="main_line">
+        <div class="between_line"></div>
+        <div class="digit">3</div>
+        <div class="between_line"></div>
+    </div>
+    <section class="section4">
+        <p class="first_day_title">Սիսիան - Քարահունջ - Շաքիի ջրվեժ - Սևանալիճ - Դիլիջան</p>
+        <p>Առավոտյան, նախաճաշից հետո կձիավարենք դեպի Քարահունջ: Քարահունջ հնագույն
+             մեգալիթյան համալիրը գտնվում է Սյունիքի մարզի Սիսիան քաղաքի մոտակայքում: 
+             Երկու հարյուրից ավելի ուղղահայաց կանգնած, մինչև 3 մետր բարձրություն ունեցող 
+             քարերը (մենհիրներ) զբաղեցնում են 3 հեկտարից ավելի տարածքն: Քարերի կեսից շատն 
+             ունեն անցքեր, որոնց տրամագիծը կազմում է 5-7 սմ: Այդ քարերը կազմում են տարբեր 
+             տրամագծեր ունեցող երկու շրջան: Շրջանառվում է մի քանի վարկած Քարահունջի նշանակության 
+             հետ կապված: Ըստ վարկածներից մեկի, Քարահունջը եղել է հնագույն պաշտամունքային վայր: 
+             Ըստ մեկ այլ վարկածի Քարահունջը համարվում է աշխարհի հնագույն աստղադիտարաններից մեկը: 
+             Այստեղից ձիավարությունը կշարունակենք դեպի Շաքիի գեղատեսիլ ջրվեժ: Ջրվեժի մոտ մի փոքր 
+             հանգստանալուց հետո կուղևորվենք դեպի Դիլիջան: 
+            Ճանապարհին կանգ կառնենք Սևանալճի մոտ: Ընթրիք և գիշերակաց Դիլիջանում: 
+        </p>
+        <p class="first_day_title" id="round4">Գիշերակաց: Դիլիջան</p> 
+        <div class="images">
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/03/4.-Shaki_Waterfall2-370x280.png" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/04/7.-karahunj1-1-370x280.png" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/11/sevan-370x280.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="main_line">
+        <div class="between_line"></div>
+        <div class="digit">4</div>
+        <div class="between_line"></div>
+    </div>
+    <section class="section4">
+        <p class="first_day_title">Դիլիջան - Գոշավանք - Ենոքավան</p>
+        <p>Նախաճաշից հետո կուղևորվենք դեպի Դիլիջան: Դիլիջանը փոքրիկ կուրորտային քաղաք է 28.000 բնակչությամբ: 
+            Այն հայտնի է նաև  ‹‹հայկական Շվեյցարիա›› անվանմամբ: Քաղաքային շրջայցից հետո կուղևորվենք դեպի 
+            Գոշավանք: Տավուշի մարզի Գոշ գյուղում՝ Գետիկ գետի վտակի ափին է գտնվում 12-13-րդ դդ. կրոնական, 
+            կրթական և մշակութային նշանավոր կենտրոններից մեկը՝ Նոր Գետիկ (Գոշավանք) վանական համալիրը։ 
+            Երկրաշարժից փլված Գետիկ վանքի փոխարեն 1188 թ.-ին իշխան Իվանե Զաքարյանի աջակցությամբ հիմնադրել
+             է նշանավոր գիտնական, օրենսդիր, դավանաբան, մեկնիչ, առակագիր, մանկավարժ Մխիթար Գոշը (1120-1213)՝
+            անվանելով Նոր Գետիկ։ Գոշի մահից հետո վանական համալիրը վերանվանվել է նրա անունով և կոչվել 
+            Գոշավանք: Գոշավանքի այցելությունից հետո կուղևորվենք դեպի Հայաստանի գողտրիկ անկյուններից մեկը՝ 
+            դեպի Ենոքավան: Ենոքավանը փոքրիկ գյուղ է ծվարած անտառապատ ժայռի եզրին:  Գիշերակաց և ընթրիք Ենոքավանում: 
+        </p>
+        <p class="first_day_title" id="round5">Գիշերակաց: Ենոքավան</p> 
+        <div class="images">
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/03/4444444-370x280.jpg" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/06/2.-old-dilijan-3-370x280.png" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/03/Goshavank-370x280.png" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="main_line">
+        <div class="between_line"></div>
+        <div class="digit">5</div>
+        <div class="between_line"></div>
+    </div>
+   <section class="section4">
+        <p class="first_day_title">Ենոքավան - Բերդատեղ - Ենոքավան</p>
+        <p >Առավոտյան , նախաճաշից հետո կսկսենք ձիավարությունը դեպի Բերդատեղ ամրոց: Ամրոցը գտնվում է Ենոքավանից  8 կմ հյուսիս-արևմուտք, բարձր բլրի վրա։ Երեք կողմից ունի անառիկ լանջեր և միայն հարավ-արևելքից մատչելի անցումներ։ Ամրոցը զբաղեցնում է 1.5 հեկտար տարածություն, պաշտպանված է մի ընդհանուր պարսպով, կառուցված խոշոր քարերով, իսկ հակառակորի համար մատչելի հատվածներում կառուցված են ևս երկու պարիսպ։ Պատերը լրացուցիչ ամրացված են որմնահեցով։ Պահպանվել են քիչ թեքությամբ կառուցված երեք մուտքերը։ Պեղումնեիր շնորհիվ այստեղ բացվել են մի քանի կացարաններ և տաճար։ Գտնված նյութերը՝ նետասլաքները, դանակները, նիզակները և բազմաթիվ խեցեղեն առարկաները հնարավորություն են տալիս ամրոցը թվագրել մ.թ.ա. 7-6-րդ դդ.: Գիշերակաց և ընթրիք Ենոքավանում:
+        </p>
+        <p class="first_day_title" id="round6">Գիշերակաց: Ենոքավան</p> 
+        <div class="images">
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/03/3.-Enokavan-370x280.png" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/04/nature-280x252.jpg" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/03/%D4%B5%D5%B6%D5%B8%D6%84%D5%A1%D5%BE%D5%A1%D5%B6-370x280.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="main_line">
+        <div class="between_line"></div>
+        <div class="digit">6</div>
+        <div class="between_line"></div>
+    </div>
+    <section class="section4">
+        <p class="first_day_title">Ենոքավան - Սրվեղի Վանք- Ենոքավան</p>
+        <p>Այսօր կձիավարենք դեպի անտառապատ բացատի բարձրադիր սարալանջին գտնվող Սրվեղի միջնադարյան հայկական վանք:Վանքը կառուցվել է 13-րդ դարում։ Հուշարձանախմբի գլխավոր եկեղեցին գմբեթավոր դահլիճ է, կառուցված թրծած աղյուսով։ Միայն պատերի ստորին շարքերը մոտ մեկ մետր բարձրությամբ շարված են մուգ վարդագույն անդեզիտի սրբատաշ քարերով։ Կիրանց հուշարձանախմբից հետո շրջանում սա երկրորդ աղյուսաշեն հուշարձանախումբն է։ Սրվեղի  վանքի ընդհանուր համալիրը բաղկացած է հետևյալ մասերից՝
+
+            Սուրբ Աստվածածին
+            
+            Սուրբ Նշան
+            
+            Խուցեր Ձիթհանք
+            
+            Օժանդակ շինություններ (ժամանակին առնված են եղել շրջապարիսպի մեջ)
+            
+            Վանքի տարածքում պահպանվել են բնակելի և տնտեսական շինությունների, պարսպապատերի հետքեր, գերեզմանոցներ։
+        </p>
+        <p class="first_day_title" id="round7">Գիշերակաց: Ենոքավան</p> 
+        <div class="images">
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/04/01_hiking_trails-370x280.jpg" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/05/4-370x280.png" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/03/%D4%B3%D5%B8%D5%B7_%D5%AC%D5%AB%D5%B3_%D4%B4%D5%AB%D5%AC%D5%AB%D5%BB%D5%A1%D5%B6_%D5%8F%D5%A1%D5%BE%D5%B8%D6%82%D5%B7_3-370x280.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="main_line">
+        <div class="between_line"></div>
+        <div class="digit">7</div>
+        <div class="between_line"></div>
+    </div>
+    <section class="section4">
+        <p class="first_day_title">Ենոքավան - Ախթալա - Հաղպատ - Երևան</p>
+        <p > Այսօր կուղևրվենք դեպի Լոռու մարզ: Այստող կայցելենք Ախթալայի վանքը:Ախթալայի վանական հուշարձանախմբում ներդաշնակ միահյուսվել են հայկական, վրացական ու բյուզանդական ճարտարապետության տարրերը։ Միջնադարում վանքը հայտնի էր որպես Պղնձահանքի վանք։ Կիրակոս Գանձակեցին իր "Հայոց Պատմությունում" հիշատակում է, որ իշխան Իվանե Զաքարյանը մահացավ 1241 թ և նրա դին ամփոփվեց Պղնձահանքում, որը Իվանեն նախկինում խլել էր հայերից և դարձրել վրացական (այսինքը՝ ուղղափառ) եկեղեցի։ Դարձնելով ուղղափառ եկեղեցի, ուղղափառություն ընդունած Իվանե Զաքարյանը այն վերակառուցեց և անվանեց Ախթալա։ Ըստ Գանձակեցու, նույն եկեղեցում է ամփոփված նաև Իվանեի որդի, իշխան Ավագը (մահ, 1250 թ)։ Սուրբ Աստվածածին եկեղեցու պատերը նկարազարդված են հոյակապ, հրաշալի պահպանված որմնանկարներով։ Եկեղեցու որմնանկարների ստորին շերտը վերաբերում է 11-րդ դարին։ Գունազարդումը բնորոշ է բյուզանդական արվեստին, իսկ թեմատիկ լուծումները՝ հայկական մանրանկարչությանը։ Իսկ 13-րդ դարում և հետո կատարված որմնանկարները հարազատ են բյուզանդական արվեստին։ Դրանց մեծ մասն ունի հունարեն, մի մասն էլ՝ վրացերեն արձանագրություններ։ Երկշերտ բարձրարվեստ որմնանկարները պատկերում են Հին և Նոր կտակարանների առանձին դրվագներ, սրբերի պատկերներ: Այնուհետև կուղևորվենք Հաղպատավանք: Հիմնադրվել է 10-րդ դարի 2-րդ կեսին։ 10-13-րդ դարերում Հայաստանի նշանավոր հոգևոր և մշակութային կենտրոններից էր։ 1996-ին Հաղպատի վանական համալիրը ընդգրկվել է 
+            ՅՈՒՆԵՍԿՕ-ի համաշխարհային մշակութային «Արժեքների ցուցակ»-ում։ Վերադարձ Երևան:
+        </p>
+        <p class="first_day_title" id="round8">Գիշերակաց: Երևան</p> 
+        <div class="images">
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/04/1-%D4%B1%D5%AD%D5%A9%D5%A1%D5%AC%D5%A1%D5%B5%D5%AB-%D5%BE%D5%A1%D5%B6%D5%A1%D5%AF%D5%A1%D5%B6-%D5%B0%D5%A1%D5%B4%D5%A1%D5%AC%D5%AB%D6%80-370x280.png" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/05/1.-haghpat-monastery-1-370x280.png" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/04/4.-%D5%A1%D5%AD%D5%A9%D5%A1%D5%AC%D5%A1-370x280.png" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="main_line">
+        <div class="between_line"></div>
+        <div class="digit">8</div>
+        <div class="between_line"></div>
+    </div>
+    <section class="section4">
+        <p class="first_day_title">Երևան - Գառնի - Գեղարդ - Երևան</p>
+        <p > Հյուրանոցում նախաճաշելուց հետո կուղևորվենք դեպի Գեղարդավանք։ Ճանապարհին կանգ կառնենք Չարենցի կամարի մոտ։ Այցելություն ժայռափոր Գեղարդավանք,  որը ընդգրկված է ՅՈՒՆԵՍԿՕ-ի Համաշխարհային մշակութային արժեքների ցանկում։ Կմասնակցենք հայկական ավանդական լավաշ թխելուն։ Այցելություն Գառնիի հեթանոսական տաճար։ Գառնու տաճարից կսկսենք արշավը և կքայլենք դեպի Քարերի Սիմֆոնիա, 
+            որը գտնվում է Ազատի կիրճում: Վերադարձ Երևան։
+        </p>
+        <p class="first_day_title" id="round8">Գիշերակաց: Երևան</p> 
+        <div class="images">
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/06/9.-geghart-monastery1-1-370x280.png" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/12/garni-370x280.jpg" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://onewaytour.com/wp-content/uploads/2016/04/11.-Gexardavanq-370x280.png" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="main_line" id="round9">
+        <div class="between_line"></div>
+        <div class="digit">9</div>
+        <div class="between_line"></div>
+    </div>
+    <section class="section4">
+        <p class="first_day_title">Մեկնում</p>
+        <p>Վաղ առավոտյան տեղափոխում օդանավակայան:</p>
+        <div class="mapouter"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24379.384091880172!2d44.477989449999995!3d40.1996524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1644317783701!5m2!1sru!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="about_price">
+            <p>ԳԻՆԸ՝ ԿԱԽՎԱԾ ՄԱՐԴԿԱՆՑ ՔԱՆԱԿԻՑ</p>
+            <table class="table";>
+                <tbody>
+                    <tr class="first_tr">
+                        <th class="col-md-4">4 անձ</th>
+                        <th class="col-md-4">6 անձ</th>
+                        <th class="col-md-4">8 անձ</th>
+                        <th class="col-md-4">10 անձ</th>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">1.132 USD</td>
+                        <td class="col-md-4">965 USD</td>
+                        <td class="col-md-4">881 USD</td>
+                        <td class="col-md-4">831 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <hr>
+    <section class="section5">
+        <div class="main_text_info">
+            <div>
+                <h4>ԳԻՆԸ ՆԵՐԱՌՈՒՄ Է</h4>
+                <ul>
+                    <li>Գիշերակաց 3* հյուրանոցում</li>
+                    <li>Տրանսպորտ</li>
+                    <li>Պրոֆեսիոնալ զբոսավարի ծառայություն</li>
+                    <li>Նախաճաշ</li>
+                    <li>Մուտքավճարներ</li>
+                    <li>Ձիերի և ուղեկցորդների վճարներ</li>
+                    <li>0,5 լ ջուր օրական յուր. օրական</li>
+                </ul>
+            </div>
+            <div>
+                <h4>ԳԻՆԸ ՉԻ ՆԵՐԱՌՈՒՄ</h4>
+                <ul>
+                    <li>Տեղափոխումը Հայաստան</li>
+                    <li>Ալկոհոլային խմիչքները</li>
+                    <li>Սնունդ</li>
+                    <li>Ապահովագրություն</li>
+                </ul>
+            </div>
+            <div>
+                <h4>ԿԱՐԵՎՈՐ Է</h4>
+                <ul>
+                    <li>Նշված գները տրված են 1 անձի հաշվարկով երկտեղանի սենյակում:</li>
+                    <li>Ծրագիրը հնարավոր է փոփոխել ըստ Ձեր ցանկության:</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer class="footer">
+    <div class="flex">
+        <div class="footermenu">
+            <ul>
+                <li ><a href="../../pages/about_us.html" id="fau">Մեր մասին</a></li>
+                <li><a href="../../index.html #popularTours" id="ftt">Թոփ տուրեր</a></li>
+                <li><a href="../about_us.html#contact" id="fcu">Հետադարձ կապ</a></li>
+                <li><a href="../../pages/hotels.html" id="fh">Հյուրանոցներ</a></li>
+                <li><a id="fcr">Մեքենաների վարձույթ (շուտով)</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
