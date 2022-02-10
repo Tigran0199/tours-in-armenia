@@ -1,0 +1,86 @@
+/* Animation for header */
+@keyframes gettingHidden {
+    0% {
+      transform: translateY(0px);
+    }
+    25% {
+      /* transform: scale(0.7); */
+    }
+    50% {
+      /* transform: scale(0.5); */
+    }
+    75% {
+      /* transform: scale(0.2); */
+    }
+    100% {
+      /* transform: scale(0); */
+      width: 0px;
+      height: 0px;
+      opacity: 0.1;
+      transform: translateY(-100px);
+    }
+  }
+  @keyframes goingTop {
+   0%{
+     transform: translateX(-5px);
+     transform: translateY(-5px);
+   }
+   25%{
+    transform: translateX(-25px);
+    transform: translateY(-25px);
+   }
+   50%{
+    transform: translateX(-35px);
+    transform: translateY(-35px);
+   }
+   75%{
+    transform: translateX(-45px);
+    transform: translateY(-45px);
+   }
+   100%{
+    transform: translateX(-55px);
+    transform: translateY(-55px);
+   }
+  }
+  @keyframes smalling{
+    0%{
+      height: 152px;
+    }
+    25%{
+      height: 134px;
+    }
+    50%{
+      height: 116px;
+    }
+    75%{
+      height: 98px;
+    }
+    100%{
+      height: 80px;
+    }
+  }
+  @keyframes topForNavBar{
+    0%{
+      top: 0px;
+    }  
+    0%{}  
+    0%{}  
+    0%{}  
+    0%{top: -90px;}  
+  }
+  .bouncyAnimation{
+    animation: topForNavBar 1s linear;
+  }
+  .goTop {
+    animation: goingTop 1.5s linear;
+  }
+  .goingHidden {
+    animation: gettingHidden 1s linear;
+  }
+  .goingSmall{
+    animation: smalling 1s linear;
+  }
+  .goingBig{
+    animation: smalling 1s linear reverse;
+  }
+  

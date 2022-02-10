@@ -327,6 +327,13 @@ a {
   width: 600px;
   height: 600px;
 }
+.scoreShower{
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+}
 .running {
   width: calc(100% - 200px);
   display: flex;
@@ -339,7 +346,8 @@ a {
   width: 100px;
   height: 100px;
   animation: runngingCat 10s infinite linear;
-  cursor: pointer;
+  cursor: pointer;  
+  user-select: none;
 }
 @keyframes runngingCat {
   0% {
@@ -398,6 +406,31 @@ a {
     transform: rotateY(180deg);
   }
 }
+.playWithCat{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 24px;
+  user-select: none;
+  opacity: 0.7;
+}
+.gift{
+  position:fixed;
+  right:0px;
+  bottom: 30%;
+  opacity: 0.2;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.gift:hover{
+  opacity: 1;
+}
+.gift:hover a{
+  color:black;
+}
 
 /* footer */
 .footer {
@@ -433,19 +466,23 @@ a {
 /* Animation for header */
 @keyframes gettingHidden {
   0% {
-    transform: scale(0.9);
+    transform: translateY(0px);
   }
   25% {
-    transform: scale(0.7);
+    /* transform: scale(0.7); */
   }
   50% {
-    transform: scale(0.5);
+    /* transform: scale(0.5); */
   }
   75% {
-    transform: scale(0.2);
+    /* transform: scale(0.2); */
   }
   100% {
-    transform: scale(0);
+    /* transform: scale(0); */
+    width: 0px;
+    height: 0px;
+    opacity: 0.1;
+    transform: translateY(-100px);
   }
 }
 @keyframes goingTop {
@@ -470,9 +507,44 @@ a {
   transform: translateY(-55px);
  }
 }
+@keyframes smalling{
+  0%{
+    height: 152px;
+  }
+  25%{
+    height: 134px;
+  }
+  50%{
+    height: 116px;
+  }
+  75%{
+    height: 98px;
+  }
+  100%{
+    height: 80px;
+  }
+}
+@keyframes topForNavBar{
+  0%{
+    top: 0px;
+  }  
+  0%{}  
+  0%{}  
+  0%{}  
+  0%{top: -90px;}  
+}
+.bouncyAnimation{
+  animation: topForNavBar 1s linear;
+}
 .goTop {
-  animation: goingTop 1.5s;
+  animation: goingTop 1.5s linear;
 }
 .goingHidden {
   animation: gettingHidden 1s linear;
+}
+.goingSmall{
+  animation: smalling 1s linear;
+}
+.goingBig{
+  animation: smalling 1s linear reverse;
 }

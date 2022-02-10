@@ -1,13 +1,36 @@
-"use strict";
 let languageSelector = document.querySelector(".selectorLanguage");
 let moneySelector = document.querySelector("#selectorMoney");
 let myStorage = window.localStorage;
-const SCROLLHEIGHT = document.documentElement.scrollHeight;
-const CAT = document.querySelector(".isRunning");
-const catAudio = new Audio("../hidden/playMe.mp3");
+const CAT = document.querySelector(".isRunning");    
+let score = 0;
+const catAudio1 = new Audio("../hidden/playMe.mp3");
+const catAudio2 = new Audio("../hidden/simple.mp3");
+const catAudio3 = new Audio("../hidden/simple1.mp3");
+const catAudio4 = new Audio("../hidden/simple2.mp3");
+const playlist = [catAudio1, catAudio2, catAudio3, catAudio4];
+
 CAT.addEventListener("mouseover",function(){
-  catAudio.play();
+ playlist[getRandomNumber(0,3)].play();
 })
+
+CAT.addEventListener("click",()=>{
+  document.querySelector(".scoreShower").innerHTML =`Clicks :  ${score}`;
+  if(score===3){
+    document.querySelector(".scoreShower").innerHTML =`Clicks :  ${score}`;
+    alert(` You win! \n You get 20% discount on our all tours! \n This is your secret code : ${getSecretCode()}
+    \n *NOTE: You can use this code only once!`);
+    score = 0
+  }else {
+    score++;
+  }
+})
+function getSecretCode(){
+  let secretCode = ["ae621T","a1e2s3","a3521sf","BABKEN","MsJlmB", "VvSdvD", "pHkZtu", "9c0xED", "Z0VvA7", "A7a5R6", "kPYN34", "spRemu", "KHZsjk", "t5Ow22"];
+  return secretCode[getRandomNumber(0,secretCode.length-1)];
+}
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
 if (myStorage.getItem("language") === "english") {
   allEnglish();
@@ -29,31 +52,7 @@ if (myStorage.getItem("money") === "USD") {
   allARM();
   moneySelector.value = "ARM";
 }
-document.querySelector("body").onscroll = () => {
-  setTimeout(modifyHeader, 1000);
-  if (window.pageYOffset >= 250) {
-    document.querySelector(".logo").classList.add("goingHidden");
-    document.querySelector(".slogan").classList.add("goingHidden");
-  } else {
-    document.querySelector(".logo").classList.remove("goingHidden");
-    document.querySelector(".slogan").classList.remove("goingHidden");
-  }
-};
-function modifyHeader() {
-  if (window.pageYOffset >= 250) {
-    document.querySelector(".menuChooser").style.display = "none";
-    document.querySelector(".logo").style.display = "none";
-    document.querySelector(".slogan").style.display = "none";
-    document.querySelector(".menubar").style.height = "80px";
-    document.querySelector(".navigationBar").style.alignItems = "flex-start";
-  } else {
-    document.querySelector(".menuChooser").style.display = "flex";
-    document.querySelector(".logo").style.display = "flex";
-    document.querySelector(".slogan").style.display = "flex";
-    document.querySelector(".menubar").style.height = "170px";
-    document.querySelector(".navigationBar").style.alignItems = "flex-end";
-  }
-}
+
 
 languageSelector.addEventListener("change", function () {
   if (languageSelector.value === "armenian") {
@@ -148,6 +147,8 @@ function allEnglish() {
   document.querySelector("#fbs9").innerHTML =
     "introduce the Armenian history and made the tour unforgettable!!!";
   document.querySelector("#fbs10").innerHTML = "<br>- Lee Lit -";
+  document.querySelector("#giftFromUs").innerHTML = "Gift From Us";
+  document.querySelector(".playWithCat").innerHTML = "Play With Cat , He has a gift for you :)";
   document.querySelector("#fau").innerHTML = "About Us";
   document.querySelector("#ftt").innerHTML = "Top tours";
   document.querySelector("#fcu").innerHTML = "Contact Us";
@@ -219,6 +220,8 @@ function allArmenian() {
   document.querySelector("#fbs9").innerHTML =
     "ավյունով ու եռանդով լի հումորի վարպետներ: ՇՆՈՐՀԱԿԱԼ ԵՄ:";
   document.querySelector("#fbs10").innerHTML = "<br>- Սվետա Թորոսյան -";
+  document.querySelector("#giftFromUs").innerHTML = "Նվեր մեր կողմից";
+  document.querySelector(".playWithCat").innerHTML = "Խաղա կատվի հետ։ Քեզ համար անակնկալ ունի :)";
   document.querySelector("#fau").innerHTML = "Մեր մասին";
   document.querySelector("#ftt").innerHTML = "Թոփ տուրեր";
   document.querySelector("#fcu").innerHTML = "Հետադարձ կապ";
@@ -287,6 +290,8 @@ function allRussian() {
   document.querySelector("#fbs9").innerHTML =
     "Все хорошо организовано, мы посетили много интересных мест, услышали много увлекательной и любопытной информации. ";
   document.querySelector("#fbs10").innerHTML = "<br>- Катерина Уткина -";
+  document.querySelector("#giftFromUs").innerHTML = "Подарок от нас";
+  document.querySelector(".playWithCat").innerHTML = "Поиграй с котом у него есть подарок для тебя :)";
   document.querySelector("#fau").innerHTML = "О нас";
   document.querySelector("#ftt").innerHTML = "Топ туров";
   document.querySelector("#fcu").innerHTML = "Контакты";

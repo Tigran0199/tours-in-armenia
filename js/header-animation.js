@@ -1,25 +1,42 @@
+const MENUBAR = document.querySelector(".menubar");
+const LOGO = document.querySelector(".logo");
+const SLOGAN = document.querySelector(".slogan");
+const BOUNCY_BUTTONS = document.querySelectorAll(".bouncy");
+
 document.querySelector("body").onscroll = () => {
-    setTimeout(modifyHeader, 1000);
-    if (window.pageYOffset >= 250) {
-      document.querySelector(".logo").classList.add("goingHidden");
-      document.querySelector(".slogan").classList.add("goingHidden");
-    } else {
-      document.querySelector(".logo").classList.remove("goingHidden");
-      document.querySelector(".slogan").classList.remove("goingHidden");
+  setTimeout(modifyHeader, 1000);
+  if (window.pageYOffset >= 250) {
+    if(MENUBAR.classList.contains("goingBig")){
+      MENUBAR.classList.remove("goingBig");
     }
-  };
-  function modifyHeader() {
-    if (window.pageYOffset >= 250) {
-      document.querySelector(".menuChooser").style.display = "none";
-      document.querySelector(".logo").style.display = "none";
-      document.querySelector(".slogan").style.display = "none";
-      document.querySelector(".menubar").style.height = "80px";
+    setTimeout(()=>{
+      LOGO.classList.add("goingHidden");
+      SLOGAN.classList.add("goingHidden");
+      MENUBAR.classList.add("goingSmall");
       document.querySelector(".navigationBar").style.alignItems = "flex-start";
-    } else {
+    },0)
+  } else {
+      LOGO.classList.remove("goingHidden");
+      SLOGAN.classList.remove("goingHidden");
+      MENUBAR.classList.remove("goingSmall");
+      document.querySelector(".navigationBar").style.alignItems = "flex-end";
+  }
+};
+function modifyHeader() {
+  if (window.pageYOffset >= 250) {
+    document.querySelector(".menuChooser").style.display = "none";
+    document.querySelector(".logo").style.display = "none";
+    document.querySelector(".slogan").style.display = "none";
+    document.querySelector(".menubar").style.height = "80px";
+    
+  } else {
+    MENUBAR.classList.add("goingBig");
+    setTimeout(()=>{
       document.querySelector(".menuChooser").style.display = "flex";
       document.querySelector(".logo").style.display = "flex";
       document.querySelector(".slogan").style.display = "flex";
       document.querySelector(".menubar").style.height = "170px";
-      document.querySelector(".navigationBar").style.alignItems = "flex-end";
-    }
+      
+    },1000)
   }
+}
