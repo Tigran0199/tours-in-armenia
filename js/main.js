@@ -8,9 +8,6 @@ const catAudio2 = new Audio("../hidden/simple.mp3");
 const catAudio3 = new Audio("../hidden/simple1.mp3");
 const catAudio4 = new Audio("../hidden/simple2.mp3");
 const playlist = [catAudio1, catAudio2, catAudio3, catAudio4];
-// const MENUBAR = document.querySelector(".menubar");
-// const LOGO = document.querySelector(".logo");
-// const SLOGAN = document.querySelector(".slogan");
 
 CAT.addEventListener("mouseover",function(){
  playlist[getRandomNumber(0,3)].play();
