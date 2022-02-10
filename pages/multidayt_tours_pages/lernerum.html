@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../../css/MultidayToursCss/multidayToursPages.css">
     <script src="../../js/header-animation.js" defer></script>
     <script src="./js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js" defer></script>
+    <script src="../../js/svg.js" defer></script>
 </head>
 <body>
     <div style="height: 200px;">
@@ -135,32 +137,32 @@
         </div>
         <div class="whole_info">
             <div class="about_tour">
-                <object id="type" type="image/svg+xml" data="../../img/type.svg"></object>
+                <object id="type"   onmouseenter="playTypeAnim()" type="image/svg+xml" data="../../img/type.svg"></object>
                <h5>ՏՈՒՐԻ ՏԵՍԱԿ</h5>
                <p>արշավային</p>
            </div>
            <div class="about_tour">
-               <object id="clock" type="image/svg+xml" data="../../img/clock.svg"></object>
+               <object id="clock" onmouseenter="playClockAnim()" type="image/svg+xml" data="../../img/clock.svg"></object>
                <h5>ՏԵՎՈՂՈՒԹՅՈՒՆ</h5>
                <p>7 օր / 7 գիշեր</p>
            </div>
-           <div class="about_tour">
-               <object id="people_count" type="image/svg+xml" data="../../img/people_count.svg"></object>
+           <div class="about_tour" >
+               <object id="people_count" onmouseenter="playPeopleAnim()" type="image/svg+xml" data="../../img/people_count.svg"></object>
                <h5>ՄԱՐԴԿԱՆՑ ՔԱՆԱԿԸ</h5>
                <p>6+</p>
            </div>
            <div class="about_tour">
-               <object id="hotel" type="image/svg+xml" data="../../img/hotel.svg"></object>
+               <object id="hotel" onmouseenter="playHotelAnim()" type="image/svg+xml" data="../../img/hotel.svg"></object>
                <h5>ԿԱՑԱՐԱՆ</h5>
                <p>հյուրանոց / վրան</p>
            </div>
            <div class="about_tour">
-               <object id="season" type="image/svg+xml" data="../../img/season.svg"></object>
+               <object id="season" onmouseenter="playSeasonAnim()" type="image/svg+xml" data="../../img/season.svg"></object>
                <h5>ԼԱՎ. ՍԵԶՈՆ</h5>
                <p>հունիս - սեպտեմբեր</p>
            </div>
            <div class="about_tour">
-               <object id="start_end" type="image/svg+xml" data="../../img/start_end.svg"></object>
+               <object id="start_end" onmouseenter="playStartAnim()" type="image/svg+xml" data="../../img/start_end.svg"></object>
                <h5>ՍԿԻԶԲ / ԱՎԱՐՏ</h5>
                <p>Երևան / Երևան</p>
            </div>
