@@ -1,7 +1,7 @@
 let languageSelector = document.querySelector(".selectorLanguage");
 let moneySelector = document.querySelector("#selectorMoney");
 let myStorage = window.localStorage;
-const CAT = document.querySelector(".isRunning");    
+const CAT = document.querySelector(".isRunning");
 let score = 0;
 const catAudio1 = new Audio("../hidden/playMe.mp3");
 const catAudio2 = new Audio("../hidden/simple.mp3");
@@ -9,24 +9,39 @@ const catAudio3 = new Audio("../hidden/simple1.mp3");
 const catAudio4 = new Audio("../hidden/simple2.mp3");
 const playlist = [catAudio1, catAudio2, catAudio3, catAudio4];
 
-CAT.addEventListener("mouseover",function(){
- playlist[getRandomNumber(0,3)].play();
-})
+CAT.addEventListener("mouseover", function () {
+  playlist[getRandomNumber(0, 3)].play();
+});
 
-CAT.addEventListener("click",()=>{
-  document.querySelector(".scoreShower").innerHTML =`Clicks :  ${score}`;
-  if(score===3){
-    document.querySelector(".scoreShower").innerHTML =`Clicks :  ${score}`;
+CAT.addEventListener("click", () => {
+  document.querySelector(".scoreShower").innerHTML = `Clicks :  ${score}`;
+  if (score === 3) {
+    document.querySelector(".scoreShower").innerHTML = `Clicks :  ${score}`;
     alert(` You win! \n You get 20% discount on our all tours! \n This is your secret code : ${getSecretCode()}
     \n *NOTE: You can use this code only once!`);
-    score = 0
-  }else {
+    score = 0;
+  } else {
     score++;
   }
-})
-function getSecretCode(){
-  let secretCode = ["ae621T","a1e2s3","a3521sf","BABKEN","MsJlmB", "VvSdvD", "pHkZtu", "9c0xED", "Z0VvA7", "A7a5R6", "kPYN34", "spRemu", "KHZsjk", "t5Ow22"];
-  return secretCode[getRandomNumber(0,secretCode.length-1)];
+});
+function getSecretCode() {
+  let secretCode = [
+    "ae621T",
+    "a1e2s3",
+    "a3521sf",
+    "BABKEN",
+    "MsJlmB",
+    "VvSdvD",
+    "pHkZtu",
+    "9c0xED",
+    "Z0VvA7",
+    "A7a5R6",
+    "kPYN34",
+    "spRemu",
+    "KHZsjk",
+    "t5Ow22",
+  ];
+  return secretCode[getRandomNumber(0, secretCode.length - 1)];
 }
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -52,7 +67,6 @@ if (myStorage.getItem("money") === "USD") {
   allARM();
   moneySelector.value = "ARM";
 }
-
 
 languageSelector.addEventListener("change", function () {
   if (languageSelector.value === "armenian") {
@@ -148,7 +162,8 @@ function allEnglish() {
     "introduce the Armenian history and made the tour unforgettable!!!";
   document.querySelector("#fbs10").innerHTML = "<br>- Lee Lit -";
   document.querySelector("#giftFromUs").innerHTML = "Gift From Us";
-  document.querySelector(".playWithCat").innerHTML = "Play With Cat , He has a gift for you :)";
+  document.querySelector(".playWithCat").innerHTML =
+    "Play With Cat , He has a gift for you :)";
   document.querySelector("#fau").innerHTML = "About Us";
   document.querySelector("#ftt").innerHTML = "Top tours";
   document.querySelector("#fcu").innerHTML = "Contact Us";
@@ -221,7 +236,8 @@ function allArmenian() {
     "ավյունով ու եռանդով լի հումորի վարպետներ: ՇՆՈՐՀԱԿԱԼ ԵՄ:";
   document.querySelector("#fbs10").innerHTML = "<br>- Սվետա Թորոսյան -";
   document.querySelector("#giftFromUs").innerHTML = "Նվեր մեր կողմից";
-  document.querySelector(".playWithCat").innerHTML = "Խաղա կատվի հետ։ Քեզ համար անակնկալ ունի :)";
+  document.querySelector(".playWithCat").innerHTML =
+    "Խաղա կատվի հետ։ Քեզ համար անակնկալ ունի :)";
   document.querySelector("#fau").innerHTML = "Մեր մասին";
   document.querySelector("#ftt").innerHTML = "Թոփ տուրեր";
   document.querySelector("#fcu").innerHTML = "Հետադարձ կապ";
@@ -291,7 +307,8 @@ function allRussian() {
     "Все хорошо организовано, мы посетили много интересных мест, услышали много увлекательной и любопытной информации. ";
   document.querySelector("#fbs10").innerHTML = "<br>- Катерина Уткина -";
   document.querySelector("#giftFromUs").innerHTML = "Подарок от нас";
-  document.querySelector(".playWithCat").innerHTML = "Поиграй с котом у него есть подарок для тебя :)";
+  document.querySelector(".playWithCat").innerHTML =
+    "Поиграй с котом у него есть подарок для тебя :)";
   document.querySelector("#fau").innerHTML = "О нас";
   document.querySelector("#ftt").innerHTML = "Топ туров";
   document.querySelector("#fcu").innerHTML = "Контакты";
