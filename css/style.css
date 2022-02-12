@@ -104,7 +104,9 @@ select {
   padding-left: 10px;
   padding-right: 10px;
 }
-
+.first_background {
+  background-image: url();
+}
 .popularTours {
   width: 290px;
   height: 50px;
@@ -292,6 +294,7 @@ select {
 }
 .map {
   width: 55%;
+  z-index: 5;
 }
 
 svg path:hover {
@@ -308,7 +311,10 @@ svg path:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
+}
+.map_info h1 {
+  margin-bottom: 50px;
 }
 .map_text {
   width: 40%;
