@@ -24,6 +24,9 @@ CAT.addEventListener("click", () => {
     secretCode = getSecretCode();
     document.querySelector(".scoreShower").innerHTML = `Clicks :  ${score}`;
     GIFT_MODAL.style.display = "block";
+    if(GIFT_MODAL.style.animation=="fadeOut 1s linear"){
+      GIFT_MODAL.style.animation="";
+    }
     GIFT_MODAL.style.animation = "fadeIn 0.5s linear";
     document.querySelector(
       ".modalContent"
@@ -43,7 +46,7 @@ CLOSE_BUTTON.addEventListener("click", () => {
   setTimeout(() => {
     GIFT_MODAL.style.display = "none";
   }, 1000);
-  GIFT_MODAL.style.animation = "fadeOut 0.5s linear reverse";
+  GIFT_MODAL.style.animation = "fadeOut 1s linear";
 });
 
 function getSecretCode() {
