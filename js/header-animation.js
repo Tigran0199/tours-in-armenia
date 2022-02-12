@@ -3,23 +3,25 @@ const LOGO = document.querySelector(".logo");
 const SLOGAN = document.querySelector(".slogan");
 const BOUNCY_BUTTONS = document.querySelectorAll(".bouncy");
 
+// code for body scroll event
+// depending on the scroll position, the header will change its size
 document.querySelector("body").onscroll = () => {
   setTimeout(modifyHeader, 1000);
   if (window.pageYOffset >= 250) {
-    if(MENUBAR.classList.contains("goingBig")){
+    if (MENUBAR.classList.contains("goingBig")) {
       MENUBAR.classList.remove("goingBig");
     }
-    setTimeout(()=>{
+    setTimeout(() => {
       LOGO.classList.add("goingHidden");
       SLOGAN.classList.add("goingHidden");
       MENUBAR.classList.add("goingSmall");
       document.querySelector(".navigationBar").style.alignItems = "flex-start";
-    },0)
+    }, 0);
   } else {
-      LOGO.classList.remove("goingHidden");
-      SLOGAN.classList.remove("goingHidden");
-      MENUBAR.classList.remove("goingSmall");
-      document.querySelector(".navigationBar").style.alignItems = "flex-end";
+    LOGO.classList.remove("goingHidden");
+    SLOGAN.classList.remove("goingHidden");
+    MENUBAR.classList.remove("goingSmall");
+    document.querySelector(".navigationBar").style.alignItems = "flex-end";
   }
 };
 function modifyHeader() {
@@ -28,15 +30,13 @@ function modifyHeader() {
     document.querySelector(".logo").style.display = "none";
     document.querySelector(".slogan").style.display = "none";
     document.querySelector(".menubar").style.height = "80px";
-    
   } else {
     MENUBAR.classList.add("goingBig");
-    setTimeout(()=>{
+    setTimeout(() => {
       document.querySelector(".menuChooser").style.display = "flex";
       document.querySelector(".logo").style.display = "flex";
       document.querySelector(".slogan").style.display = "flex";
       document.querySelector(".menubar").style.height = "170px";
-      
-    },1000)
+    }, 1000);
   }
 }

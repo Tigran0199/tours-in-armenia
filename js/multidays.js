@@ -2,6 +2,9 @@ let languageSelector=document.querySelector("#selectorLanguage")
 let moneySelector=document.querySelector("#selectorMoney")
 let myStorage = window.localStorage;
 
+
+//there is duplicate codes in this file
+//all information about code you can find in the file js\main.js
 if(myStorage.getItem("language")==="english"){
     allEnglish()
     languageSelector.value="english"

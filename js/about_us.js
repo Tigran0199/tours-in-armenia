@@ -1,5 +1,9 @@
 let languageSelector = document.querySelector("#selectorLanguage");
 let myStorage = window.localStorage;
+
+//there is duplicate codes in this file
+//all information about code you can find in the file js\main.js
+
 if (myStorage.getItem("language") === "english") {
   allEnglish();
   languageSelector.value = "english";
@@ -28,35 +32,37 @@ languageSelector.addEventListener("change", function () {
 
 function allArmenian() {
   fetch("../data/data.json")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    for (let key in data["about_us"]["armenian"]) {
-      document.querySelector(`${key}`).innerHTML = data["about_us"]["armenian"][key];
-    }
-  });
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      for (let key in data["about_us"]["armenian"]) {
+        document.querySelector(`${key}`).innerHTML =
+          data["about_us"]["armenian"][key];
+      }
+    });
 }
 function allEnglish() {
   fetch("../data/data.json")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    for (let key in data["about_us"]["english"]) {
-      document.querySelector(`${key}`).innerHTML = data["about_us"]["english"][key];
-    }
-  });
- 
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      for (let key in data["about_us"]["english"]) {
+        document.querySelector(`${key}`).innerHTML =
+          data["about_us"]["english"][key];
+      }
+    });
 }
 function allRussian() {
   fetch("../data/data.json")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    for (let key in data["about_us"]["russian"]) {
-      document.querySelector(`${key}`).innerHTML = data["about_us"]["russian"][key];
-    }
-  });
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      for (let key in data["about_us"]["russian"]) {
+        document.querySelector(`${key}`).innerHTML =
+          data["about_us"]["russian"][key];
+      }
+    });
 }
