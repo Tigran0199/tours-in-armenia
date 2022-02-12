@@ -17,7 +17,7 @@
     <script src="./js/main.js" defer></script>
 </head>
 <body>
-    <div class="menubar">
+    <header class="menubar">
         <div class="flex menuChooser">
             <div>
                 <label for="subject">Language</label>
@@ -48,9 +48,7 @@
                 </div>
                 <p class="slogan"><b>Բացահայտենք<br>Հայաստանը<br>Միասին</b></p>
             </div>
-    </div>
-    
-    
+    </header>
     <div id="popularTours" ></div>
     <div class="conteiner">
        
@@ -139,6 +137,13 @@
             </div>
         </div>
         <div class="gift"><a href="#play" id="giftFromUs">Նվեր մեր կողմից</a></div>
+        <div class="modal">
+            <p class="modalContent"></p>
+                <div class="forButtons">    
+                    <button class="copyButton">Copy Code</button>
+                    <button class="closeButton" >Close</button>
+                </div>
+        </div>
     </div>
     <div class="playArea" id="play">
         <p class="scoreShower">Clicks : 0</p>
@@ -161,6 +166,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
