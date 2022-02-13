@@ -104,9 +104,7 @@ select {
   padding-left: 10px;
   padding-right: 10px;
 }
-.first_background {
-  background-image: url();
-}
+
 .popularTours {
   width: 290px;
   height: 50px;
@@ -291,6 +289,9 @@ select {
   text-align: center;
   width: 400px;
   height: 360px;
+}
+.beautifulAnim {
+  margin-top: 70px;
 }
 .map {
   width: 55%;
