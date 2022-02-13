@@ -36,7 +36,6 @@ CAT.addEventListener("click", () => {
     document.querySelector(".scoreShower").innerHTML = `Clicks :  ${score}`;
   } else {
     score++;
-    document.querySelector(".scoreShower").innerHTML = `Clicks :  ${score}`;
   }
 });
 COPY_BUTTON.addEventListener("click", () => {
