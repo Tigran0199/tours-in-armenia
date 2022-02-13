@@ -265,7 +265,7 @@ select {
   padding-bottom: 20px;
 }
 .footermenu {
-  width: 40%;
+  width: 20%;
   text-align: left;
   margin-left: 10px;
   color: rgb(180 182 206);
@@ -300,8 +300,13 @@ select {
   margin: 10px auto;
   font-size: 25px;
   color: rgb(180 182 206);
+  transition: 0.3s;
 }
 .contact_with a:hover {
   color: white;
   cursor: pointer;
+}
+.copyRights {
+  font-size: 12px;
+  padding-top: 90px;
 }
