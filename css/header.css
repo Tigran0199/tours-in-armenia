@@ -69,18 +69,18 @@
     0%{top: -90px;}  
   }
   .bouncyAnimation{
-    animation: topForNavBar 1s linear;
+    animation: topForNavBar 0.4s linear;
   }
   .goTop {
-    animation: goingTop 1.5s linear;
+    animation: goingTop 0.4s linear;
   }
   .goingHidden {
-    animation: gettingHidden 1s linear;
+    animation: gettingHidden 0.4s linear;
   }
   .goingSmall{
-    animation: smalling 1s linear;
+    animation: smalling 0.4s linear;
   }
   .goingBig{
-    animation: smalling 1s linear reverse;
+    animation: smalling 0.4s linear reverse;
   }
   
