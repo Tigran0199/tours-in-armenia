@@ -297,7 +297,9 @@ select {
   width: 55%;
   z-index: 5;
 }
-
+svg path {
+  transition: 0.5s;
+}
 svg path:hover {
   fill: #fff;
   stroke: #007dc4;
