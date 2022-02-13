@@ -59,6 +59,17 @@ let elements = document.querySelectorAll("path");
 function getMainInfo(name) {
   head.innerHTML = ` ${mainInfo[name]["head"]}`;
   main.innerHTML = `${mainInfo[name]["info"]}`;
+  fetch("../data/data.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      let language = languageSelector.value;
+      let country = data["main"]["map"][language][name];
+      for (let elem in country) {
+        document.querySelector(elem).innerHTML = country[elem];
+      }
+    });
   for (let elem of elements) {
     if (elem.style.fill == "white") {
       elem.style.fill = "#007dc4";

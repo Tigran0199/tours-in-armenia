@@ -536,12 +536,14 @@ a {
   padding-bottom: 20px;
 }
 .footermenu {
+  width: 40%;
   text-align: left;
   margin-left: 10px;
   color: rgb(180 182 206);
   cursor: pointer;
   transition: 0.3s;
 }
+
 .footermenu li:hover {
   color: white;
 }
@@ -551,4 +553,26 @@ a {
 }
 .footermenu li a:hover {
   color: white;
+}
+.footer_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.social {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.contact_with {
+  display: flex;
+}
+.contact_with a {
+  margin: 10px auto;
+  font-size: 25px;
+  color: rgb(180 182 206);
+}
+.contact_with a:hover {
+  color: white;
+  cursor: pointer;
 }
