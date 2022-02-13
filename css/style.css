@@ -24,10 +24,10 @@
     height: 130px;
   }
   
-  .aboutConteiner h1,#fbTitle,#topTours{
+  .aboutConteiner h1,#fbTitle,#topTours,#mh1{
     font-size: 24px;
   }
-  #aAp1,#aAp2,#aAbutton1,#wwusli1,#wwusli1p1,#wwusli2,#wwusli2p1,#wwusli3,#wwusli3p1{
+  #aAp1,#aAp2,#aAbutton1,#wwusli1,#wwusli1p1,#wwusli2,#wwusli2p1,#wwusli3,#wwusli3p1,#mp1{
     font-size: 16px;
   }
   #slogan{
@@ -85,10 +85,10 @@
     height: 120px;
   }
   
-  .aboutConteiner h1,#fbTitle,#topTours{
+  .aboutConteiner h1,#fbTitle,#topTours,#mh1{
     font-size: 22px;
   }
-  #aAp1,#aAp2,#aAbutton1,#wwusli1,#wwusli1p1,#wwusli2,#wwusli2p1,#wwusli3,#wwusli3p1{
+  #aAp1,#aAp2,#aAbutton1,#wwusli1,#wwusli1p1,#wwusli2,#wwusli2p1,#wwusli3,#wwusli3p1,#mp1{
     font-size: 14px;
     padding: 5px;
   }
@@ -100,6 +100,9 @@
   width: 290px;
   height: 300px;
 
+  }
+  .gift{
+    display: none;
   }
   .feedbackBoard p{
     font-size: 14px;
@@ -149,10 +152,10 @@
     height: 120px;
   }
   
-  .aboutConteiner h1,#fbTitle,#topTours{
+  .aboutConteiner h1,#fbTitle,#topTours,#mh1{
     font-size: 22px;
   }
-  #aAp1,#aAp2,#aAbutton1,#wwusli1,#wwusli1p1,#wwusli2,#wwusli2p1,#wwusli3,#wwusli3p1{
+  #aAp1,#aAp2,#aAbutton1,#wwusli1,#wwusli1p1,#wwusli2,#wwusli2p1,#wwusli3,#wwusli3p1,#mp1{
     font-size: 14px;
     padding: 5px;
   }
@@ -214,10 +217,10 @@
     height: 110px;
   }
   
-  .aboutConteiner h1,#fbTitle,#topTours{
+  .aboutConteiner h1,#fbTitle,#topTours,#mh1{
     font-size: 18px;
   }
-  #aAp1,#aAp2,#aAbutton1,#wwusli1,#wwusli1p1,#wwusli2,#wwusli2p1,#wwusli3,#wwusli3p1{
+  #aAp1,#aAp2,#aAbutton1,#wwusli1,#wwusli1p1,#wwusli2,#wwusli2p1,#wwusli3,#wwusli3p1,#mp1{
     font-size: 12px;
     padding: 15px;
   }
