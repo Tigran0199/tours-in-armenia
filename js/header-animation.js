@@ -6,7 +6,7 @@ const BOUNCY_BUTTONS = document.querySelectorAll(".bouncy");
 // code for body scroll event
 // depending on the scroll position, the header will change its size
 document.querySelector("body").onscroll = () => {
-  setTimeout(modifyHeader, 1000);
+  setTimeout(modifyHeader, 400);
   if (window.pageYOffset >= 250) {
     if (MENUBAR.classList.contains("goingBig")) {
       MENUBAR.classList.remove("goingBig");
@@ -37,6 +37,6 @@ function modifyHeader() {
       document.querySelector(".logo").style.display = "flex";
       document.querySelector(".slogan").style.display = "flex";
       document.querySelector(".menubar").style.height = "170px";
-    }, 1000);
+    }, 400);
   }
 }
