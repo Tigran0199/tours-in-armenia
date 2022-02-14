@@ -359,9 +359,7 @@ select {
   padding-left: 10px;
   padding-right: 10px;
 }
-.first_background {
-  background-image: url();
-}
+
 .popularTours {
   width: 290px;
   height: 50px;
@@ -547,11 +545,16 @@ select {
   width: 400px;
   height: 360px;
 }
+.beautifulAnim {
+  margin-top: 70px;
+}
 .map {
   width: 55%;
   z-index: 5;
 }
-
+svg path {
+  transition: 0.5s;
+}
 svg path:hover {
   fill: #fff;
   stroke: #007dc4;
@@ -791,12 +794,14 @@ a {
   padding-bottom: 20px;
 }
 .footermenu {
+  width: 20%;
   text-align: left;
   margin-left: 10px;
   color: rgb(180 182 206);
   cursor: pointer;
   transition: 0.3s;
 }
+
 .footermenu li:hover {
   color: white;
 }
@@ -806,4 +811,31 @@ a {
 }
 .footermenu li a:hover {
   color: white;
+}
+.footer_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.social {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.contact_with {
+  display: flex;
+}
+.contact_with a {
+  margin: 10px auto;
+  font-size: 25px;
+  color: rgb(180 182 206);
+  transition: 0.3s;
+}
+.contact_with a:hover {
+  color: white;
+  cursor: pointer;
+}
+.copyRights {
+  font-size: 12px;
+  padding-top: 90px;
 }
